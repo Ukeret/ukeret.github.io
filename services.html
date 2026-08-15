@@ -1,554 +1,430 @@
 
-<DOCTYPE html>
+
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Gallery</title>
+
+    <title>Services | UK AND ASSOCIATES LLC</title>
+
+    <meta name="description" content="Explore technology services from UK AND ASSOCIATES LLC, including GPS vehicle tracking, security camera installation, computer upgrades and repair, and network installation and support in Philadelphia, PA.">
+
     <link rel="stylesheet" href="styles.css">
-    <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
-    <!-- Google Fonts Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <style>
+        /* Global Styles */
         body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 2; /* Double spacing */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.7;
         }
 
-        p, .product-item p {
-            line-height: 2; /* Ensures double spacing for paragraphs */
-            margin-bottom: 1rem; /* Adds space below paragraphs */
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            transition: 0.3s;
         }
 
-        h1, h2 {
-            margin-bottom: 1rem; /* Adds space below headings */
+        a:hover {
+            color: #0056b3;
         }
 
-        nav {
-            margin-bottom: 2rem; /* Adds spacing below navigation */
-        }
-
-        .product-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .product-item img {
-            width: 400px; /* Fixed width for all images */
-            height: 400px; /* Fixed height for all images */
-            object-fit: cover; /* Ensures images are resized to fit within the dimensions without distortion */
-            display: block;
-            margin: 0 auto;
-            background-color: purple;
-            padding: 10px; /* Add padding to make the background visible */
-            border-radius: 5px; /* Optional: add rounded corners */
-        }
-
-        .product-item p {
+        /* Header */
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 3rem 1rem;
             text-align: center;
-            background-color: blue; /* Blue background for text */
-            padding: 5px; /* Adds padding around the text */
-            border-radius: 3px; /* Optional: rounded corners for text background */
-            margin-top: 10px; /* Space between image and text */
-            color: white; /* Makes text readable on blue background */
-            width: 400px; /* Matches the image width */
-            margin-left: auto; /* Centers the text block */
-            margin-right: auto; /* Centers the text block */
+        }
+
+        header h1 {
+            font-size: 2.7rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin: 0.75rem 0 0;
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 8px;
+            padding: 14px 12px;
+            font-size: 1rem;
+            color: #333;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        /* Main */
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 3rem 5%;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #222;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: #0056b3;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.08rem;
+            color: #555;
+        }
+
+        /* Intro */
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .intro p {
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Service Sections */
+        .service-section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-section ul {
+            padding-left: 22px;
+            color: #555;
+        }
+
+        .service-section li {
+            margin-bottom: 10px;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #003f85;
+            color: white;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 35px;
+            background-color: #e9f2ff;
+            border-radius: 8px;
+        }
+
+        .cta h2 {
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #111;
+        }
+
+        footer p {
+            margin: 5px;
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #7db7ff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1.05rem;
+            }
+
+            nav a {
+                margin: 0 3px;
+                padding: 12px 7px;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 0;
+                border-bottom: 1px solid #eee;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Page Content -->
-    <header>
-        <h1>Welcome to Our Product Gallery</h1>
-    </header>
+<header>
+    <h1>UK AND ASSOCIATES LLC</h1>
+    <p>Professional Technology Services for Homes, Vehicles, and Businesses</p>
+</header>
 
-    <!-- Navigation Bar -->
-    <nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gps-tracking.html">GPS Tracking</a>
+    <a href="security-cameras.html">Security Cameras</a>
+    <a href="computer-services.html">Computer Services</a>
+    <a href="networking.html">Networking</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+    <section class="intro">
+        <h2>Our Technology Services</h2>
+
+        <p>
+            UK AND ASSOCIATES LLC provides practical technology solutions
+            designed to improve security, visibility, performance, and
+            connectivity for individuals and businesses throughout the
+            Philadelphia area.
+        </p>
+
+        <p>
+            From GPS vehicle tracking and surveillance systems to computer
+            upgrades and network installation, we provide professional
+            installation, configuration, and support based on each customer's
+            specific needs.
+        </p>
+    </section>
+
+
+    <section class="service-section">
+        <h2>GPS Vehicle Tracking & Monitoring</h2>
+
+        <p>
+            Our GPS tracking solutions help customers maintain greater
+            visibility of personal vehicles, business vehicles, and light
+            commercial fleets.
+        </p>
+
+        <p>
+            Depending on the selected equipment and service configuration,
+            available features may include:
+        </p>
+
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="products.html">Our Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li>Real-time vehicle location</li>
+            <li>Trip and route history</li>
+            <li>Geofencing</li>
+            <li>Towing and unauthorized movement alerts</li>
+            <li>Tracker disconnect or tamper alerts</li>
+            <li>Overspeed notifications</li>
+            <li>Driver-behavior monitoring</li>
+            <li>Backup battery operation</li>
+            <li>Ignition and movement detection</li>
+            <li>Remote access to tracking information</li>
         </ul>
-    </nav>
 
-   <p style="font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333; text-align: justify; padding: 10px;">
-    Each of our flies is meticulously hand-tied by expert artisans using high-quality materials sourced from around the globe. 
-    We offer a wide variety of flies, including nymphs, dry flies, streamers, and emergers for freshwater and saltwater fishing.
-    We can work on orders from 100 dozen to 10,000 dozen and above. Sixteen(16) business days would get any orders placed to your warehouse,
-    stores, or your place of business. We also accept any quantity placed. Below are some of our product display. Make a selection, 
-    and we can discuss bulk purchases in detail.
-   </p>
+        <p>
+            We offer options for both simple installations and more advanced
+            professional hardwired installations, depending on the vehicle and
+            customer requirements.
+        </p>
 
-   <div hidden id="snipcart" data-api-key="NDQ4N2I4ODUtZWI2My00NDI5LWE4YzktNTA3NTU1NTU4NjAwNjM4NzQ1MDAxOTQyMzY2NTUz"></div>
+        <a href="gps-tracking.html" class="button">Explore GPS Tracking</a>
+    </section>
 
 
-        Product Gallery With Prices 
+    <section class="service-section">
+        <h2>Security Camera Installation</h2>
+
+        <p>
+            UK AND ASSOCIATES LLC installs and configures surveillance systems
+            for residential and commercial properties.
+        </p>
+
+        <p>
+            Our security camera services may include:
+        </p>
+
+        <ul>
+            <li>Indoor and outdoor camera installation</li>
+            <li>Analog and IP surveillance systems</li>
+            <li>DVR and NVR installation</li>
+            <li>Camera placement planning</li>
+            <li>Video and network cabling</li>
+            <li>Remote viewing configuration</li>
+            <li>Monitor and display setup</li>
+            <li>Existing camera system upgrades</li>
+            <li>System troubleshooting</li>
+            <li>Property coverage evaluations</li>
+        </ul>
+
+        <p>
+            We work with customers to determine camera placement based on
+            entrances, parking areas, interior spaces, equipment locations,
+            and overall security goals.
+        </p>
+
+        <a href="security-cameras.html" class="button">Explore Security Cameras</a>
+    </section>
 
 
-    <div id="product-gallery">
-        <!-- Manually added images for the gallery -->
-        <div class="product-item">
-            <img src="images/product1  Adams Female.jpg" alt="Product 1">
-               <p style="padding-left: 1in;">Adams Female $4/dozen </p>
-        </div>
+    <section class="service-section">
+        <h2>Computer Upgrades & Repair</h2>
 
-        <div class="product-item">
-            <img src="images/product2 Bh chrinomid-pupa black.webp" alt="Product 2">
-              <p style="padding-left: 1in;"> Bh chrinomid-pupa black $4/dozen </p>
-        </div>
+        <p>
+            We provide computer troubleshooting, hardware upgrades, and
+            technical support for personal computers and business workstations.
+        </p>
 
-        <div class="product-item">
-            <img src="images/product3 bh bunny leech black.jpg" alt="Product 3">
-              <p style="padding-left: 1in;">Bh bunny leech black $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product4  Euro Copper Zebra Blue.webp" alt="Product 4">
-               <p style="padding-left: 1in;">Euro Copper Zebra Blue $3/dozen </p>
-        </div>
+        <p>
+            Available computer services include:
+        </p>
 
-        <div class="product-item">
-            <img src="images/product5 Trico Black.webp" alt="Product 5">
-            <p style="padding-left: 1in;">Trico Black $3/dozen</p>
-        </div>
+        <ul>
+            <li>Memory and RAM upgrades</li>
+            <li>SSD and NVMe storage upgrades</li>
+            <li>Hard drive replacement</li>
+            <li>Desktop and workstation hardware upgrades</li>
+            <li>Windows troubleshooting and support</li>
+            <li>Hardware diagnostics</li>
+            <li>System performance optimization</li>
+            <li>Component replacement</li>
+            <li>Data migration</li>
+            <li>New workstation setup and configuration</li>
+        </ul>
 
-        <div class="product-item">
-            <img src="images/product6 trout crack.webp" alt="Product 6">
-              <p style="padding-left: 1in;">Trout crack $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product7 TungstenBeadhead Zebra Midge Curved Black .jpg" alt="Product 7">
-              <p style="padding-left: 1in;">TungstenBeadhead Zebra Midge Curved Black $7/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product8 Warriror Perdigon.webp" alt="Product 8">
-              <p style="padding-left: 1in;">Warriror Perdigon $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product9 Tungsten Jig Drag Queen.webp" alt="Product 9">
-              <p style="padding-left: 1in;">Tungsten Jig Drag Queen $6/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product10 Quill Gordon.jpg" alt="Product 10">
-             <p style="padding-left: 1in;">Quill Gordon $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product11 Laying Caddis.webp" alt="Product 11">
-              <p style="padding-left: 1in;">Laying Caddis $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product12 Parachute Light Cahill Hi Vis.webp" alt="Product 12">
-              <p style="padding-left: 1in;">Parachute Light Cahill Hi Vis $3/dozen </p>
-        </div>
-       
-        <div class="product-item">
-            <img src="images/product14  Adams Cripple .webp" alt="Product 14">
-              <p style="padding-left: 1in;"> Adams Cripple  $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product15  alpine ant.webp" alt="Product 15">
-             <p style="padding-left: 1in;">Alpine ant $4 /dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product16 apple caddis.webp" alt="Product 16">
-              <p style="padding-left: 1in;">Apple caddis $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product17  Renegade.webp" alt="Product 17">
-             <p style="padding-left: 1in;">Renegade $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product18 Royal Coachman dry.webp" alt="Product 18">
-              <p style="padding-left: 1in;">Royal Coachman dry $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product19 Royal trude.webp" alt="Product 19">
-              <p style="padding-left: 1in;">Royal trude $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product20  Spinner BWO.webp" alt="Product 20">
-             <p style="padding-left: 1in;">Spinner BWO $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product22  Spinner Adams.webp" alt="Product 22">
-              <p style="padding-left: 1in;">Spinner Adams $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product23  Autumn caddis.webp" alt="Product 23">
-             <p style="padding-left: 1in;">Autumn caddis $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product24 Sow Bug Gray BH.webp" alt="Product 24">
-              <p style="padding-left: 1in;">Sow Bug Gray BH $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product25 Black Gnat Red Tail.webp" alt="Product 25">
-             <p style="padding-left: 1in;">Black Gnat Red Tail $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product26  Parachute bwo hivis.webp" alt="Product 26">
-              <p style="padding-left: 1in;"> Parachute bwo hivis $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product27  Blue Dun .webp" alt="Product 27">
-             <p style="padding-left: 1in;">Blue Dun $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product28 Callibaetis Cripple Gray.webp" alt="Product 28">
-             <p style="padding-left: 1in;">Callibaetis Cripple Gray $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product29 Copper John Emerger Beadhead Copper .webp" alt="Product 29">
-              <p style="padding-left: 1in;">Copper John Emerger Beadhead Copper $4/dozen </p>
-        </div>
-            <div class="product-item">
-            <img src="images/product30 doodle bug.webp" alt="Product 30">
-             <p style="padding-left: 1in;">Doodle bug $4/dozen</p>
-        </div>
-        
-            <div class="product-item">
-            <img src="images/product31  Euro Hares Ear.webp" alt="Product 31">
-             <p style="padding-left: 1in;">Euro Hares Ear $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product33  Euro Zebra Midge Green Butt.jpg" alt="Product 33">
-              <p style="padding-left: 1in;">Euro Zebra Midge Green Butt $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product34  Flying Ant Black.webp" alt="Product 34">
-              <p style="padding-left: 1in;">Flying Ant Black $3/dozen </p>
-        </div>
-       
+        <p>
+            Whether a system needs improved performance, additional storage,
+            new hardware, or troubleshooting, we can evaluate the computer
+            and recommend an appropriate solution.
+        </p>
 
-        <div class="product-item">
-            <img src="images/product35 Foam Beetle Hi Vis.jpg" alt="Product 35">
-              <p style="padding-left: 1in;"> Foam Beetle Hi Vis  $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product36 Gray Wulff.webp" alt="Product 36">
-             <p style="padding-left: 1in;">Gray Wulff $4 /dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product37 biot midge.webp" alt="Product 37">
-              <p style="padding-left: 1in;">Biot midge $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product38 black magic.webp" alt="Product 38">
-             <p style="padding-left: 1in;">Black magic $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product39  Collard Caddis black.webp" alt="Product 39">
-              <p style="padding-left: 1in;">Collard Caddis black $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product40 Copper John Rubber Legs Beadhead.webp" alt="Product 40">
-              <p style="padding-left: 1in;">Copper John Rubber Legs Beadhead $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product41 Euro Pink Tag Nymph.webp" alt="Product 41">
-             <p style="padding-left: 1in;">Euro Pink Tag Nymph $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product42  Parachute Adams Hi Vis.webp" alt="Product 42">
-              <p style="padding-left: 1in;">Parachute Adams Hi Vis $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product43  Inch Worm Beadhead.webp" alt="Product 43">
-             <p style="padding-left: 1in;">Inch Worm Beadhead $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product44 Brown Hackle Peacock.webp" alt="Product 44">
-              <p style="padding-left: 1in;">Brown Hackle Peacock $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product45  Bivisible Brown.jpg" alt="Product 45">
-             <p style="padding-left: 1in;">Bivisible Brown $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product46  Bivisible Black.webp" alt="Product 46">
-              <p style="padding-left: 1in;"> Bivisible Black $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product47  bh caddis larva green.webp" alt="Product 47">
-             <p style="padding-left: 1in;">Bh caddis larva green $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product48  Euro Copper John Tungsten .webp" alt="Product 48">
-             <p style="padding-left: 1in;"> Euro Copper John Tungsten $6/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product49  AZ Peacock Lady.webp" alt="Product 49">
-              <p style="padding-left: 1in;"> AZ Peacock Lady $4/dozen </p>
-        </div>
-            <div class="product-item">
-            <img src="images/product50  Baetis Cripple.jpg" alt="Product 50">
-             <p style="padding-left: 1in;">Baetis Cripple $3/dozen</p>
-        </div>
+        <a href="computer-services.html" class="button">Explore Computer Services</a>
+    </section>
 
-         <div class="product-item">
-            <img src="images/product51 bh blue assassin.webp" alt="Product 51">
-             <p style="padding-left: 1in;">Bh blue assassin $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product52  bh brassie copper.webp" alt="Product 52">
-             <p style="padding-left: 1in;"> Bh brassie copper $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product53 bh bunny leech black.webp" alt="Product 53">
-              <p style="padding-left: 1in;"> Bh bunny leech black $4/dozen </p>
-        </div>
-            <div class="product-item">
-            <img src="images/product54  Adams Female  .webp" alt="Product 54">
-             <p style="padding-left: 1in;">Adams Female1 $3/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies01 .jpg" alt="Product 55">
-               <p style="padding-left: 1in;">Barbless hooks flies01 $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies03.jpg" alt="Product 56">
-              <p style="padding-left: 1in;">Barbless hooks flies03 $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies05.jpg" alt="Product 57">
-               <p style="padding-left: 1in;">Barbless hooks flies05 $3/dozen </p>
-        </div>
 
-        <div class="product-item">
-            <img src="images/Barbless hooks flies06.jpg" alt="Product 58">
-            <p style="padding-left: 1in;">Barbless hooks flies06 $3/dozen</p>
-        </div>
+    <section class="service-section">
+        <h2>Network Installation & Support</h2>
 
-        <div class="product-item">
-            <img src="images/Barbless hooks flies07.jpg" alt="Product 59">
-              <p style="padding-left: 1in;">Barbless hooks flies07 $3/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies08.jpg" alt="Product 60">
-              <p style="padding-left: 1in;">Barbless hooks flies08 $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies10.jpg" alt="Product 61">
-              <p style="padding-left: 1in;">Barbless hooks flies10 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies12.jpg" alt="Product 62">
-              <p style="padding-left: 1in;">Barbless hooks flies12 $5/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies13 .jpg" alt="Product 63">
-             <p style="padding-left: 1in;">Barbless hooks flies13 $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies17.jpg" alt="Product 64">
-              <p style="padding-left: 1in;">Barbless hooks flies17 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies18.jpg" alt="Product 65">
-              <p style="padding-left: 1in;">Barbless hooks flies18 $4/dozen </p>
-        </div>
-       
-        <div class="product-item">
-            <img src="images/Barbless hooks flies19.jpg" alt="Product 66">
-              <p style="padding-left: 1in;">arbless hooks flies19 $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies20.jpg" alt="Product 67">
-             <p style="padding-left: 1in;">Barbless hooks flies20 $4 /dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks flies21.jpg" alt="Product 68">
-              <p style="padding-left: 1in;">Barbless hooks flies21 $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks fly04.jpg" alt="Product 69">
-             <p style="padding-left: 1in;">Barbless hooks fly04 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks fly09.jpg" alt="Product 70">
-              <p style="padding-left: 1in;">Barbless hooks fly09 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks fly11.jpg" alt="Product 71">
-              <p style="padding-left: 1in;">Barbless hooks fly11 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks fly14.jpg" alt="Product 72">
-             <p style="padding-left: 1in;">Barbless hooks fly14 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Barbless hooks fly15.jpg" alt="Product 73">
-              <p style="padding-left: 1in;">Barbless hooks fly15 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/CH zonked muddler black.jpg" alt="Product 74">
-             <p style="padding-left: 1in;">CH zonked muddler black $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Humungous blue.jpg" alt="Product 75">
-              <p style="padding-left: 1in;">Humungous blue BH $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Mouse rat  @13 USD per dozen.jpg" alt="Product 76">
-             <p style="padding-left: 1in;">Mouse rat $13/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Mouse rat white  13usd per dozen.jpg" alt="Product 77">
-              <p style="padding-left: 1in;"> Mouse rat white  $13/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product56  SW Fly02..jpg" alt="Product 78">
-             <p style="padding-left: 1in;">SW Fly02 $4/dozen </p>
-        </div>
-        
-        <div class="product-item">
-            <img src="images/product57  SW Fly03 .jpg" alt="Product 80">
-              <p style="padding-left: 1in;">SW Fly03 $4/dozen </p>
-        </div>
-            <div class="product-item">
-            <img src="images/product58  SW Fly04.jpg" alt="Product 81">
-             <p style="padding-left: 1in;">SW Fly04 $3/dozen</p>
-        </div>
-        
-            <div class="product-item">
-            <img src="images/product59  SW Fly05.jpg" alt="Product 82">
-             <p style="padding-left: 1in;">SW Fly05 $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product60  SW Fly06 .jpg" alt="Product 83">
-              <p style="padding-left: 1in;">SW Fly06 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/product58  SW Fly04.jpg" alt="Product 84">
-              <p style="padding-left: 1in;">SW Fly04 $3/dozen </p>
-        </div>
-       
+        <p>
+            Reliable network connectivity is essential for homes and modern
+            businesses. We provide network installation, expansion, and
+            troubleshooting services.
+        </p>
 
-        <div class="product-item">
-            <img src="images/product61  SW Fly07 .jpg" alt="Product 85">
-              <p style="padding-left: 1in;"> SW Fly07  $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product62  SW Fly08.jpg" alt="Product 86">
-             <p style="padding-left: 1in;">SW Fly08 $4 /dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/product63  SW Fly09.jpg" alt="Product 87">
-              <p style="padding-left: 1in;">SW Fly09 $4/dozen</p>
-        </div>
-        <div class="product-item">
-            <img src="images/Streamers Fly.jpg" alt="Product 88">
-             <p style="padding-left: 1in;">Streamers Fly $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/SW Fly01 .jpg" alt="Product 89">
-              <p style="padding-left: 1in;">SW Fly01 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/SW Fly10.jpg" alt="Product 90">
-              <p style="padding-left: 1in;">SW Fly10 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/SW Fly11.jpg" alt="Product 91">
-             <p style="padding-left: 1in;">SW Fly11 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 001.jpg" alt="Product 92">
-              <p style="padding-left: 1in;">TFH fly 001 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 002.jpg" alt="Product 93">
-             <p style="padding-left: 1in;">TFH fly 002 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 003.jpg" alt="Product 94">
-              <p style="padding-left: 1in;">TFH fly 003 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 004.jpg" alt="Product 95">
-             <p style="padding-left: 1in;">TFH fly 004 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 005.jpg" alt="Product 96">
-              <p style="padding-left: 1in;"> TFH fly 005 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 006.jpg" alt="Product 97">
-             <p style="padding-left: 1in;">TFH fly 006 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 007.jpg" alt="Product 98">
-             <p style="padding-left: 1in;"> TFH fly 007 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 008.jpg" alt="Product 99">
-              <p style="padding-left: 1in;"> TFH fly 008 $4/dozen </p>
-        </div>
-            <div class="product-item">
-            <img src="images/TFH fly 009.jpg" alt="Product 100">
-             <p style="padding-left: 1in;">TFH fly 009  $4/dozen</p>
-        </div>
+        <p>
+            Our network services may include:
+        </p>
 
-         <div class="product-item">
-            <img src="images/TFH fly 010.jpg" alt="Product 101">
-             <p style="padding-left: 1in;">TFH fly 010 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 011.jpg" alt="Product 102">
-             <p style="padding-left: 1in;"> TFH fly 011 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 012.jpg" alt="Product 103">
-              <p style="padding-left: 1in;"> TFH fly 012 $4/dozen </p>
-        </div>
-            <div class="product-item">
-            <img src="images/TFH fly 013.jpg" alt="Product 104">
-             <p style="padding-left: 1in;">TFH fly 013 $3/dozen</p>
-        </div>
-          <div class="product-item">
-            <img src="images/TFH fly 014.jpg" alt="Product 105">
-             <p style="padding-left: 1in;">TFH fly 014 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 015.jpg" alt="Product 106">
-             <p style="padding-left: 1in;"> TFH fly 015 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/TFH fly 016.jpg" alt="Product 107">
-              <p style="padding-left: 1in;"> TFH fly 016 $4/dozen </p>
-        </div>
-            <div class="product-item">
-            <img src="images/Woolly bugger black .jpg" alt="Product 108">
-             <p style="padding-left: 1in;">Woolly bugger black  $4/dozen</p>
-        </div>
+        <ul>
+            <li>Ethernet cabling and network drops</li>
+            <li>Router installation and configuration</li>
+            <li>Network switch installation</li>
+            <li>Wi-Fi setup and troubleshooting</li>
+            <li>Small-business LAN installation</li>
+            <li>Server and workstation connectivity</li>
+            <li>Static IP configuration</li>
+            <li>Network expansion and upgrades</li>
+            <li>Device connectivity troubleshooting</li>
+            <li>Network organization and cleanup</li>
+        </ul>
 
-         <div class="product-item">
-            <img src="images/Woolly bugger brown.jpg" alt="Product 109">
-             <p style="padding-left: 1in;">Woolly bugger brown $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Woolly bugger brown2.jpg" alt="Product 110">
-             <p style="padding-left: 1in;"> Woolly bugger brown2 $4/dozen </p>
-        </div>
-        <div class="product-item">
-            <img src="images/Woolly bugger brown3.jpg" alt="Product 111">
-              <p style="padding-left: 1in;"> Woolly bugger brown3 $4/dozen </p>
-        </div>
-            <div class="product-item">
-            <img src="images/Yellow and brown woolly bugger rubber legs.jpg" alt="Product 112">
-             <p style="padding-left: 1in;">Yellow and brown woolly bugger rubber legs $4/dozen</p>
-        </div>
-        </div>
-            <div class="product-item">
-            <img src="images/Barbless hooks flies02.jpg" alt="Product 113">
-             <p style="padding-left: 1in;">Barbless hooks flies02 $3/dozen</p>
-        </div>
-    </div>
+        <p>
+            We help customers build reliable networks that support computers,
+            servers, cameras, printers, and other connected devices.
+        </p>
+
+        <a href="networking.html" class="button">Explore Networking</a>
+    </section>
+
+
+    <section class="cta">
+        <h2>Not Sure Which Service You Need?</h2>
+
+        <p>
+            Tell us about your project or technical problem. We can help
+            determine the appropriate equipment, service, and installation
+            approach.
+        </p>
+
+        <a href="contact.html" class="button">Request a Consultation</a>
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        <strong>UK AND ASSOCIATES LLC</strong>
+    </p>
+
+    <p>
+        Technology Services | Philadelphia, Pennsylvania
+    </p>
+
+    <p>
+        GPS Tracking • Security Cameras • Computer Services • Networking
+    </p>
+
+    <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms of Service</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <p>
+        &copy; 2026 UK AND ASSOCIATES LLC. All rights reserved.
+    </p>
+
+</footer>
 
 </body>
 </html>
+```

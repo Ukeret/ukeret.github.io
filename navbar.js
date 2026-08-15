@@ -1,26 +1,46 @@
-// Ensure the DOM is fully loaded before executing
+// UK AND ASSOCIATES LLC
+// Shared Navigation Bar
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Create a navigation element
+
     const nav = document.createElement("nav");
 
-    // Add navigation content using innerHTML
     nav.innerHTML = `
-        <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; background-color: #343a40;">
-            <li style="margin: 0; padding: 10px;">
-                <a href="index.html" style="color: white; text-decoration: none; padding: 10px;">Home</a>
-            </li>
-            <li style="margin: 0; padding: 10px;">
-                <a href="products.html" style="color: white; text-decoration: none; padding: 10px;">Our Products</a>
-            </li>
-            <li style="margin: 0; padding: 10px;">
-                <a href="about.html" style="color: white; text-decoration: none; padding: 10px;">About Us</a>
-            </li>
-            <li style="margin: 0; padding: 10px;">
-                <a href="contact.html" style="color: white; text-decoration: none; padding: 10px;">Contact</a>
-            </li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gps-tracking.html">GPS Tracking</a>
+        <a href="security-cameras.html">Security Cameras</a>
+        <a href="computer-services.html">Computer Services</a>
+        <a href="networking.html">Networking</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
     `;
 
-    // Insert the navigation bar at the top of the body
-    document.body.insertBefore(nav, document.body.firstChild);
+    // Find the header and place navigation directly below it
+    const header = document.querySelector("header");
+
+    if (header) {
+        header.insertAdjacentElement("afterend", nav);
+    } else {
+        document.body.insertBefore(nav, document.body.firstChild);
+    }
+
+    // Automatically highlight the current page
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // GitHub Pages / domain root may not explicitly show index.html
+    if (currentPage === "" || currentPage === "/") {
+        currentPage = "index.html";
+    }
+
+    const links = nav.querySelectorAll("a");
+
+    links.forEach(function (link) {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        }
+    });
+
 });

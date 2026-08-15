@@ -1,1 +1,511 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>About Us | UK AND ASSOCIATES LLC</title>
+
+    <meta name="description" content="Learn about UK AND ASSOCIATES LLC, a Philadelphia-based technology services company providing GPS tracking, security camera installation, computer services, and network support.">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.7rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin: 0.75rem 0 0;
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 8px;
+            padding: 14px 12px;
+            font-size: 1rem;
+            color: #333;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 3rem 5%;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #222;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: #0056b3;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.08rem;
+            color: #555;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .intro p {
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .info-card,
+        .value-card {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 2rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 2rem;
+        }
+
+        ul {
+            padding-left: 22px;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #003f85;
+            color: white;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 35px;
+            background-color: #e9f2ff;
+            border-radius: 8px;
+        }
+
+        .cta h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #111;
+        }
+
+        footer p {
+            margin: 5px;
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #7db7ff;
+        }
+
+        @media (max-width: 900px) {
+            .two-column,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1.05rem;
+            }
+
+            nav a {
+                margin: 0 3px;
+                padding: 12px 7px;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 0;
+                border-bottom: 1px solid #eee;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>UK AND ASSOCIATES LLC</h1>
+    <p>Practical Technology Solutions. Professional Service.</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gps-tracking.html">GPS Tracking</a>
+    <a href="security-cameras.html">Security Cameras</a>
+    <a href="computer-services.html">Computer Services</a>
+    <a href="networking.html">Networking</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+    <section class="intro">
+        <h2>About UK AND ASSOCIATES LLC</h2>
+
+        <p>
+            UK AND ASSOCIATES LLC is a Philadelphia-based technology services
+            company providing practical technology solutions for individuals,
+            homes, vehicles, and businesses.
+        </p>
+
+        <p>
+            Our services include GPS vehicle tracking and monitoring, security
+            camera installation, computer upgrades and repair, network
+            installation, and related technical support.
+        </p>
+
+        <p>
+            Our goal is simple: understand what the customer needs, recommend
+            an appropriate solution, install and configure the technology
+            properly, and provide dependable support.
+        </p>
+    </section>
+
+
+    <section class="info-card">
+        <h2>What We Do</h2>
+
+        <div class="two-column">
+
+            <div>
+                <h3>Vehicle Technology</h3>
+                <p>
+                    We provide GPS vehicle tracking and monitoring solutions
+                    designed to improve vehicle visibility, security awareness,
+                    and fleet management capabilities.
+                </p>
+
+                <ul>
+                    <li>GPS tracker installation</li>
+                    <li>Vehicle monitoring solutions</li>
+                    <li>Geofencing and movement alerts</li>
+                    <li>Professional hardwired installations</li>
+                    <li>Simple installation options</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Security & Surveillance</h3>
+                <p>
+                    We install and configure residential and commercial
+                    surveillance systems based on the customer's property,
+                    coverage needs, and security goals.
+                </p>
+
+                <ul>
+                    <li>Security camera installation</li>
+                    <li>DVR and NVR configuration</li>
+                    <li>Remote viewing setup</li>
+                    <li>Camera placement planning</li>
+                    <li>Existing-system upgrades</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Computer Services</h3>
+                <p>
+                    We help customers improve, troubleshoot, and maintain
+                    desktop computers and business workstations.
+                </p>
+
+                <ul>
+                    <li>Memory upgrades</li>
+                    <li>SSD and NVMe upgrades</li>
+                    <li>Hardware troubleshooting</li>
+                    <li>Workstation setup</li>
+                    <li>General technical support</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Networking</h3>
+                <p>
+                    We provide network installation and support for homes and
+                    small businesses that need reliable connectivity between
+                    computers, servers, cameras, printers, and other equipment.
+                </p>
+
+                <ul>
+                    <li>Ethernet cabling</li>
+                    <li>Router configuration</li>
+                    <li>Network switches</li>
+                    <li>Wi-Fi setup</li>
+                    <li>Server and workstation connectivity</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Our Approach</h2>
+
+        <div class="values-grid">
+
+            <div class="value-card">
+                <h3>Understand the Need</h3>
+                <p>
+                    We begin by listening to the customer and understanding
+                    what problem needs to be solved or what result they are
+                    trying to achieve.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <h3>Recommend Practical Solutions</h3>
+                <p>
+                    We focus on technology that fits the application instead of
+                    recommending unnecessary equipment or complexity.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <h3>Install & Configure Properly</h3>
+                <p>
+                    Equipment should not only be installed—it should be
+                    configured, tested, organized, and prepared for reliable
+                    everyday use.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <h3>Support the Customer</h3>
+                <p>
+                    Technology needs change over time. We aim to remain
+                    available for troubleshooting, upgrades, maintenance, and
+                    future expansion.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="info-card">
+        <h2>Professional Service With Flexibility</h2>
+
+        <p>
+            Every customer and project is different. A homeowner installing a
+            few security cameras may have very different requirements from a
+            business expanding its network or a vehicle owner looking for GPS
+            tracking.
+        </p>
+
+        <p>
+            We approach each project individually and consider factors such as:
+        </p>
+
+        <ul>
+            <li>Customer goals</li>
+            <li>Existing equipment</li>
+            <li>Installation environment</li>
+            <li>Budget</li>
+            <li>Security and privacy considerations</li>
+            <li>Future expansion</li>
+            <li>Reliability and maintenance</li>
+        </ul>
+
+        <p>
+            This allows us to recommend solutions that are appropriate for the
+            customer's actual needs rather than taking a one-size-fits-all
+            approach.
+        </p>
+    </section>
+
+
+    <section class="info-card">
+        <h2>Privacy & Responsible Technology</h2>
+
+        <p>
+            Some of the technologies we work with, particularly GPS tracking
+            and surveillance systems, can involve sensitive information.
+        </p>
+
+        <p>
+            UK AND ASSOCIATES LLC believes that these technologies should be
+            used responsibly and lawfully.
+        </p>
+
+        <p>
+            GPS tracking services are provided only when the customer
+            represents that they have lawful authority to authorize tracking.
+            Customer information and GPS tracking data are handled according
+            to our service agreements, privacy practices, and applicable law.
+        </p>
+
+        <p>
+            We also encourage customers to use security cameras and other
+            monitoring technology in accordance with applicable privacy,
+            property, employment, and recording laws.
+        </p>
+
+        <p>
+            <a href="privacy.html">Read our Privacy Policy →</a>
+        </p>
+    </section>
+
+
+    <section class="info-card">
+        <h2>Serving the Philadelphia Area</h2>
+
+        <p>
+            UK AND ASSOCIATES LLC is based in Philadelphia, Pennsylvania.
+        </p>
+
+        <p>
+            We provide technology services to residential customers, vehicle
+            owners, entrepreneurs, small businesses, and other organizations
+            that need practical technical assistance and professional
+            installation.
+        </p>
+
+        <p>
+            Project availability and service area may vary based on the type,
+            size, and location of the work requested.
+        </p>
+    </section>
+
+
+    <section class="cta">
+        <h2>Let's Talk About Your Technology Needs</h2>
+
+        <p>
+            Whether you need GPS vehicle tracking, security cameras, computer
+            service, or network support, tell us what you are trying to
+            accomplish.
+        </p>
+
+        <p>
+            We will help you determine the practical next step.
+        </p>
+
+        <a href="contact.html" class="button">Contact UK AND ASSOCIATES LLC</a>
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        <strong>UK AND ASSOCIATES LLC</strong>
+    </p>
+
+    <p>
+        Technology Services | Philadelphia, Pennsylvania
+    </p>
+
+    <p>
+        GPS Tracking • Security Cameras • Computer Services • Networking
+    </p>
+
+    <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms of Service</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <p>
+        &copy; 2026 UK AND ASSOCIATES LLC. All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
+```

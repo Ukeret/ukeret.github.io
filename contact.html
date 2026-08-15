@@ -1,213 +1,500 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uk and Associates Co - Contact</title>
+
+    <title>Contact | UK AND ASSOCIATES LLC</title>
+
+    <meta name="description" content="Contact UK AND ASSOCIATES LLC for GPS tracking, security camera installation, computer services, and networking support in Philadelphia, PA.">
+
     <link rel="stylesheet" href="styles.css">
-    <script src="navbar.js" defer></script>
+
     <style>
-        /* General reset for margins and paddings */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
+            background-color: #f4f4f9;
             color: #333;
+            line-height: 1.7;
         }
 
-        /* Header */
+        a {
+            text-decoration: none;
+            color: #007BFF;F
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
         header {
-            background-color: #007BFF;
+            background-color: #0056b3;
             color: white;
-            padding: 20px;
+            padding: 3rem 1rem;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.7rem;
+            margin: 0;
         }
 
         header p {
-            font-size: 1.2em;
-            margin-top: 10px;
+            font-size: 1.25rem;
+            margin: 0.75rem 0 0;
+            color: white;
         }
 
-        /* Navigation */
         nav {
-            background-color: #333;
-            padding: 10px;
             text-align: center;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 1.1em;
+            margin: 0 8px;
+            padding: 14px 12px;
+            font-size: 1rem;
+            color: #333;
+            display: inline-block;
         }
 
         nav a:hover {
             background-color: #007BFF;
-            border-radius: 5px;
+            color: white;
         }
 
-        /* Contact Section */
-        section {
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 3rem 5%;
         }
 
-        section h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #333;
+        h2 {
+            font-size: 2rem;
+            color: #222;
+            margin-bottom: 1rem;
         }
 
-        section p {
-            text-align: center;
-            font-size: 1.2em;
-            margin-bottom: 30px;
+        h3 {
+            color: #0056b3;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.08rem;
             color: #555;
         }
 
-        .contact-us {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
-        .contact {
-            flex: 1 1 45%;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
+        .intro p {
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .contact-card,
+        .form-card {
+            background-color: white;
+            padding: 30px;
             border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
-        .contact h3 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            color: #007BFF;
+        .contact-card p {
+            margin-bottom: 18px;
         }
 
-        .contact p {
-            font-size: 1.1em;
-            color: #555;
+        .contact-card strong {
+            color: #222;
         }
 
-        /* Form Styling */
         form {
             display: flex;
             flex-direction: column;
-            gap: 20px;
         }
 
         label {
-            font-size: 1.1em;
+            font-weight: bold;
             color: #333;
+            margin-top: 15px;
+            margin-bottom: 6px;
         }
 
-        input, textarea {
+        input,
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
             padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 1.1em;
-            transition: border-color 0.3s;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
         }
 
-        input:focus, textarea:focus {
-            border-color: #007BFF;
+        input:focus,
+        select:focus,
+        textarea:focus {
             outline: none;
+            border-color: #0056b3;
+            box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.12);
         }
 
-        button {
-            padding: 12px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1.2em;
-            transition: background-color 0.3s;
+        textarea {
+            min-height: 160px;
+            resize: vertical;
         }
 
-        button:hover {
+        .button {
+            display: inline-block;
             background-color: #0056b3;
+            color: white;
+            padding: 13px 24px;
+            margin-top: 22px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
         }
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
+        .button:hover {
+            background-color: #003f85;
+        }
+
+        .notice {
+            background-color: #fff8e6;
+            border-left: 5px solid #e0a800;
+            padding: 22px;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+
+        .privacy-note {
+            font-size: 0.92rem;
+            color: #666;
+            margin-top: 12px;
+        }
+
+        .cta {
             text-align: center;
-            padding: 15px;
-            margin-top: 40px;
+            margin-top: 4rem;
+            padding: 35px;
+            background-color: #e9f2ff;
+            border-radius: 8px;
+        }
+
+        .cta h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #111;
         }
 
         footer p {
-            font-size: 1em;
+            margin: 5px;
+            color: #ccc;
+            font-size: 0.95rem;
         }
 
-        /* Responsive Design */
+        footer a {
+            color: #7db7ff;
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
-            .contact-us {
-                flex-direction: column;
-                align-items: center;
+            header h1 {
+                font-size: 2rem;
             }
 
-            .contact {
-                width: 80%;
+            header p {
+                font-size: 1.05rem;
+            }
+
+            nav a {
+                margin: 0 3px;
+                padding: 12px 7px;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 0;
+                border-bottom: 1px solid #eee;
             }
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Uk and Associates Co</h1>
-        <p>Representing Catch-Fly Factory in the United States and Canada</p>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Our Products</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Tell us your fly spec, and we will design it for you.</p>
 
-        <!-- Formspree form for contact -->
-        <form action="https://formspree.io/f/meoeegrb" method="POST">
-            <label for="email">Your Email:</label>
-            <input type="email" name="email" id="email" required>
+<header>
+    <h1>UK AND ASSOCIATES LLC</h1>
+    <p>Contact Us About Your Technology Project</p>
+</header>
 
-            <label for="message">Your Message:</label>
-            <textarea name="message" id="message" rows="5" required></textarea>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gps-tracking.html">GPS Tracking</a>
+    <a href="security-cameras.html">Security Cameras</a>
+    <a href="computer-services.html">Computer Services</a>
+    <a href="networking.html">Networking</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-            <button type="submit">Send</button>
-        </form>
+<main>
 
-        <div class="contact-us">
-            <div class="contact">
-                <h3>Location</h3>
-                <p>Philadelphia, PA 19151</p>
-                <p>Phone: (267) 615-6700</p>
-                <p>Email: taniukere@ukandassociates.com</p>
-            </div>
-        </div>
+    <section class="intro">
+        <h2>How Can We Help?</h2>
+
+        <p>
+            Tell us about the service you need, the problem you are experiencing,
+            or the project you are planning.
+        </p>
+
+        <p>
+            UK AND ASSOCIATES LLC provides GPS tracking, security camera
+            installation, computer services, and network installation and
+            support throughout the Philadelphia area.
+        </p>
     </section>
-    <footer>
-        <p>&copy; 2025 Uk and Associates Co. All rights reserved.</p>
-    </footer>
+
+
+    <section class="contact-grid">
+
+        <div class="contact-card">
+
+            <h2>Contact Information</h2>
+
+            <p>
+                <strong>UK AND ASSOCIATES LLC</strong><br>
+                Philadelphia, Pennsylvania
+            </p>
+
+            <p>
+                <strong>Phone:</strong><br>
+                  2676156700
+            </p>
+
+            <p>
+                <strong>Email:</strong><br>
+                <a href="mailto:taniukere@ukandassociates.com">taniukere@ukandassociates.com </a>
+            </p>
+
+            <p>
+                <strong>Website:</strong><br>
+                <a href="https://ukandassociates.com/">ukandassociates.com</a>
+            </p>
+
+            <h3>Services</h3>
+
+            <p>
+                GPS Vehicle Tracking & Monitoring<br>
+                Security Camera Installation<br>
+                Computer Upgrades & Repair<br>
+                Network Installation & Support
+            </p>
+
+            <p>
+                Service availability may vary based on project type,
+                location, equipment, and scheduling.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <h2>Request a Consultation</h2>
+
+            <p>
+                Complete the form below with as much information as possible.
+                This helps us understand your request before contacting you.
+            </p>
+
+            <!--
+                IMPORTANT:
+                This form is currently a visual/static form only.
+                GitHub Pages cannot process form submissions by itself.
+
+                Later, this form can be connected to a service such as
+                Formspree, Basin, Web3Forms, or another form-processing service.
+            -->
+
+            <form action="#" method="post">
+
+                <label for="name">Name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+
+                <label for="business">Business Name (if applicable)</label>
+                <input
+                    type="text"
+                    id="business"
+                    name="business"
+                >
+
+                <label for="email">Email *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                >
+
+                <label for="service">Service Needed *</label>
+                <select
+                    id="service"
+                    name="service"
+                    required
+                >
+                    <option value="">Select a Service</option>
+                    <option value="gps-tracking">GPS Vehicle Tracking & Monitoring</option>
+                    <option value="security-cameras">Security Camera Installation</option>
+                    <option value="computer-services">Computer Upgrades & Repair</option>
+                    <option value="networking">Network Installation & Support</option>
+                    <option value="other">Other Technology Service</option>
+                </select>
+
+                <label for="contact-method">Preferred Contact Method</label>
+                <select
+                    id="contact-method"
+                    name="contact-method"
+                >
+                    <option value="">Select an Option</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="either">Either Phone or Email</option>
+                </select>
+
+                <label for="message">Tell Us About Your Project *</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Please describe the equipment, vehicle, property, computer, network, or technical issue you would like help with."
+                    required
+                ></textarea>
+
+                <button type="submit" class="button">
+                    Submit Request
+                </button>
+
+                <p class="privacy-note">
+                    Please do not submit passwords, account credentials,
+                    Social Security numbers, financial account information,
+                    or other highly sensitive information through this form.
+                    Information submitted through this website will be handled
+                    according to our Privacy Policy.
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section class="notice">
+
+        <h2>For GPS Tracking Requests</h2>
+
+        <p>
+            If you are requesting GPS tracking or installation, please include
+            the vehicle year, make, and model in your message.
+        </p>
+
+        <p>
+            GPS tracking services are provided only when the customer represents
+            that they own the vehicle or otherwise have lawful authority to
+            authorize installation and tracking.
+        </p>
+
+    </section>
+
+
+    <section class="cta">
+
+        <h2>Not Sure What You Need?</h2>
+
+        <p>
+            That's okay. Describe what you are trying to accomplish and we can
+            help determine the appropriate service or equipment.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        <strong>UK AND ASSOCIATES LLC</strong>
+    </p>
+
+    <p>
+        Technology Services | Philadelphia, Pennsylvania
+    </p>
+
+    <p>
+        GPS Tracking • Security Cameras • Computer Services • Networking
+    </p>
+
+    <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms of Service</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <p>
+        &copy; 2026 UK AND ASSOCIATES LLC. All rights reserved.
+    </p>
+
+</footer>
+
 </body>
 </html>
+```
