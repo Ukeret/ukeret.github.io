@@ -1,19 +1,19 @@
-
-
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Services | UK AND ASSOCIATES LLC</title>
 
-    <meta name="description" content="Explore technology services from UK AND ASSOCIATES LLC, including GPS vehicle tracking, security camera installation, computer upgrades and repair, and network installation and support in Philadelphia, PA.">
+    <meta name="description"
+        content="Explore technology services from UK AND ASSOCIATES LLC, including GPS vehicle tracking, security camera installation, computer upgrades and repair, and network installation and support in Philadelphia, PA.">
 
     <link rel="stylesheet" href="styles.css">
 
     <style>
+
         /* Global Styles */
         body {
             font-family: Arial, sans-serif;
@@ -34,24 +34,49 @@
             color: #0056b3;
         }
 
-        /* Header */
+
+        /* Interior Page Header */
         header {
             background-color: #0056b3;
             color: white;
-            padding: 3rem 1rem;
-            text-align: center;
+            padding: 1.5rem 5%;
         }
 
-        header h1 {
-            font-size: 2.7rem;
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-size: 2.2rem;
             margin: 0;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            margin: 0.75rem 0 0;
             color: white;
         }
+
+        .header-text p {
+            font-size: 1.15rem;
+            margin: 0.5rem 0 0;
+            color: white;
+        }
+
+        .header-logo {
+            display: block;
+            width: 200px;
+            max-width: 28%;
+            height: auto;
+            background-color: white;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
 
         /* Navigation */
         nav {
@@ -73,7 +98,8 @@
             color: white;
         }
 
-        /* Main */
+
+        /* Main Content */
         main {
             max-width: 1100px;
             margin: auto;
@@ -96,6 +122,7 @@
             color: #555;
         }
 
+
         /* Intro */
         .intro {
             text-align: center;
@@ -107,6 +134,7 @@
             margin-left: auto;
             margin-right: auto;
         }
+
 
         /* Service Sections */
         .service-section {
@@ -126,6 +154,7 @@
             margin-bottom: 10px;
         }
 
+
         /* Buttons */
         .button {
             display: inline-block;
@@ -142,7 +171,8 @@
             color: white;
         }
 
-        /* CTA */
+
+        /* Call To Action */
         .cta {
             text-align: center;
             margin-top: 4rem;
@@ -154,6 +184,7 @@
         .cta h2 {
             margin-top: 0;
         }
+
 
         /* Footer */
         footer {
@@ -172,14 +203,27 @@
             color: #7db7ff;
         }
 
-        /* Responsive */
+
+        /* Tablet / Mobile */
         @media (max-width: 768px) {
-            header h1 {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .header-text h1 {
                 font-size: 2rem;
             }
 
-            header p {
+            .header-text p {
                 font-size: 1.05rem;
+            }
+
+            .header-logo {
+                width: 210px;
+                max-width: 80%;
             }
 
             nav a {
@@ -193,24 +237,64 @@
             }
         }
 
+
+        /* Small Phones */
         @media (max-width: 600px) {
+
             nav a {
                 display: block;
                 margin: 0;
                 border-bottom: 1px solid #eee;
             }
+
+            .header-logo {
+                width: 190px;
+                max-width: 85%;
+            }
+
+            .service-section {
+                padding: 22px;
+            }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
 <header>
-    <h1>UK AND ASSOCIATES LLC</h1>
-    <p>Professional Technology Services for Homes, Vehicles, and Businesses</p>
+
+    <div class="header-content">
+
+        <div class="header-text">
+
+            <h1>UK AND ASSOCIATES LLC</h1>
+
+            <p>
+                Professional Technology Services for Homes, Vehicles, and Businesses
+            </p>
+
+        </div>
+
+
+    <img
+    src="images/uk-associates-logo.jpg"
+    alt="UK AND ASSOCIATES LLC Technology Solutions"
+    class="header-logo"
+   >
+
+    </div>
+
 </header>
 
+
+<!-- NAVIGATION -->
 <nav>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="gps-tracking.html">GPS Tracking</a>
@@ -219,11 +303,17 @@
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
+
 </nav>
 
+
+<!-- MAIN CONTENT -->
 <main>
 
+
+    <!-- INTRO -->
     <section class="intro">
+
         <h2>Our Technology Services</h2>
 
         <p>
@@ -239,11 +329,15 @@
             installation, configuration, and support based on each customer's
             specific needs.
         </p>
+
     </section>
 
 
+
+    <!-- GPS TRACKING -->
     <section class="service-section">
-        <h2>GPS Vehicle Tracking & Monitoring</h2>
+
+        <h2>GPS Vehicle Tracking &amp; Monitoring</h2>
 
         <p>
             Our GPS tracking solutions help customers maintain greater
@@ -275,11 +369,17 @@
             customer requirements.
         </p>
 
-        <a href="gps-tracking.html" class="button">Explore GPS Tracking</a>
+        <a href="gps-tracking.html" class="button">
+            Explore GPS Tracking
+        </a>
+
     </section>
 
 
+
+    <!-- SECURITY CAMERAS -->
     <section class="service-section">
+
         <h2>Security Camera Installation</h2>
 
         <p>
@@ -310,12 +410,18 @@
             and overall security goals.
         </p>
 
-        <a href="security-cameras.html" class="button">Explore Security Cameras</a>
+        <a href="security-cameras.html" class="button">
+            Explore Security Cameras
+        </a>
+
     </section>
 
 
+
+    <!-- COMPUTER SERVICES -->
     <section class="service-section">
-        <h2>Computer Upgrades & Repair</h2>
+
+        <h2>Computer Upgrades &amp; Repair</h2>
 
         <p>
             We provide computer troubleshooting, hardware upgrades, and
@@ -345,12 +451,18 @@
             and recommend an appropriate solution.
         </p>
 
-        <a href="computer-services.html" class="button">Explore Computer Services</a>
+        <a href="computer-services.html" class="button">
+            Explore Computer Services
+        </a>
+
     </section>
 
 
+
+    <!-- NETWORKING -->
     <section class="service-section">
-        <h2>Network Installation & Support</h2>
+
+        <h2>Network Installation &amp; Support</h2>
 
         <p>
             Reliable network connectivity is essential for homes and modern
@@ -380,11 +492,17 @@
             servers, cameras, printers, and other connected devices.
         </p>
 
-        <a href="networking.html" class="button">Explore Networking</a>
+        <a href="networking.html" class="button">
+            Explore Networking
+        </a>
+
     </section>
 
 
+
+    <!-- CALL TO ACTION -->
     <section class="cta">
+
         <h2>Not Sure Which Service You Need?</h2>
 
         <p>
@@ -393,12 +511,18 @@
             approach.
         </p>
 
-        <a href="contact.html" class="button">Request a Consultation</a>
+        <a href="contact.html" class="button">
+            Request a Consultation
+        </a>
+
     </section>
+
 
 </main>
 
 
+
+<!-- FOOTER -->
 <footer>
 
     <p>
@@ -425,6 +549,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
-```
