@@ -1,17 +1,19 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Computer Services | UK AND ASSOCIATES LLC</title>
 
-    <meta name="description" content="UK AND ASSOCIATES LLC provides computer upgrades, repair, troubleshooting, SSD and NVMe installation, memory upgrades, workstation setup, and technical support in Philadelphia, PA.">
+    <meta name="description"
+        content="UK AND ASSOCIATES LLC provides computer upgrades, repair, troubleshooting, SSD and NVMe installation, memory upgrades, workstation setup, and technical support in Philadelphia, PA.">
 
     <link rel="stylesheet" href="styles.css">
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,24 +33,51 @@
             color: #0056b3;
         }
 
+
+        /* Interior Page Header */
         header {
             background-color: #0056b3;
             color: white;
-            padding: 3rem 1rem;
-            text-align: center;
+            padding: 1.5rem 5%;
         }
 
-        header h1 {
-            font-size: 2.7rem;
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-size: 2.2rem;
             margin: 0;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            margin: 0.75rem 0 0;
             color: white;
         }
 
+        .header-text p {
+            font-size: 1.15rem;
+            margin: 0.5rem 0 0;
+            color: white;
+        }
+
+        .header-logo {
+            display: block;
+            width: 200px;
+            max-width: 28%;
+            height: auto;
+            background-color: white;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+
+        /* Navigation */
         nav {
             text-align: center;
             background-color: white;
@@ -68,6 +97,8 @@
             color: white;
         }
 
+
+        /* Main Content */
         main {
             max-width: 1100px;
             margin: auto;
@@ -90,6 +121,8 @@
             color: #555;
         }
 
+
+        /* Intro */
         .intro {
             text-align: center;
             margin-bottom: 3rem;
@@ -101,6 +134,8 @@
             margin-right: auto;
         }
 
+
+        /* Cards */
         .info-card,
         .service-card {
             background-color: white;
@@ -110,6 +145,8 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
+
+        /* Two Column Layout */
         .two-column {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -126,6 +163,8 @@
             margin-bottom: 10px;
         }
 
+
+        /* Steps */
         .steps {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -153,6 +192,8 @@
             font-size: 1.1rem;
         }
 
+
+        /* Important Notice */
         .notice {
             background-color: #fff8e6;
             border-left: 5px solid #e0a800;
@@ -161,6 +202,8 @@
             border-radius: 4px;
         }
 
+
+        /* Buttons */
         .button {
             display: inline-block;
             background-color: #0056b3;
@@ -176,6 +219,8 @@
             color: white;
         }
 
+
+        /* Call To Action */
         .cta {
             text-align: center;
             margin-top: 4rem;
@@ -188,6 +233,8 @@
             margin-top: 0;
         }
 
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -204,20 +251,37 @@
             color: #7db7ff;
         }
 
+
+        /* Tablet */
         @media (max-width: 900px) {
+
             .two-column,
             .steps {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
+
+        /* Mobile */
         @media (max-width: 768px) {
-            header h1 {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .header-text h1 {
                 font-size: 2rem;
             }
 
-            header p {
+            .header-text p {
                 font-size: 1.05rem;
+            }
+
+            .header-logo {
+                width: 200px;
+                max-width: 80%;
             }
 
             nav a {
@@ -231,7 +295,10 @@
             }
         }
 
+
+        /* Small Phones */
         @media (max-width: 600px) {
+
             nav a {
                 display: block;
                 margin: 0;
@@ -242,18 +309,51 @@
             .steps {
                 grid-template-columns: 1fr;
             }
+
+            .header-logo {
+                width: 190px;
+                max-width: 85%;
+            }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
 <header>
-    <h1>UK AND ASSOCIATES LLC</h1>
-    <p>Computer Upgrades, Repair & Technical Support</p>
+
+    <div class="header-content">
+
+        <div class="header-text">
+
+            <h1>UK AND ASSOCIATES LLC</h1>
+
+            <p>
+                Computer Upgrades, Repair &amp; Technical Support
+            </p>
+
+        </div>
+
+
+        <img
+            src="images/uk-associates-logo.jpg"
+            alt="UK AND ASSOCIATES LLC Technology Solutions"
+            class="header-logo"
+        >
+
+    </div>
+
 </header>
 
+
+<!-- NAVIGATION -->
 <nav>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="gps-tracking.html">GPS Tracking</a>
@@ -262,11 +362,16 @@
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
+
 </nav>
+
 
 <main>
 
+
+    <!-- INTRO -->
     <section class="intro">
+
         <h2>Improve Performance. Extend the Life of Your Computer.</h2>
 
         <p>
@@ -282,17 +387,25 @@
             a practical solution.
         </p>
 
-        <a href="contact.html" class="button">Request Computer Service</a>
+        <a href="contact.html" class="button">
+            Request Computer Service
+        </a>
+
     </section>
 
 
+
+    <!-- COMPUTER SERVICES -->
     <section class="info-card">
+
         <h2>Computer Services</h2>
 
         <div class="two-column">
 
             <div>
+
                 <h3>Hardware Upgrades</h3>
+
                 <ul>
                     <li>Memory and RAM upgrades</li>
                     <li>SSD upgrades</li>
@@ -303,10 +416,14 @@
                     <li>Workstation upgrades</li>
                     <li>Selected hardware replacement</li>
                 </ul>
+
             </div>
 
+
             <div>
-                <h3>Troubleshooting & Support</h3>
+
+                <h3>Troubleshooting &amp; Support</h3>
+
                 <ul>
                     <li>Windows troubleshooting</li>
                     <li>Slow-computer diagnostics</li>
@@ -317,18 +434,25 @@
                     <li>Performance optimization</li>
                     <li>Technical support</li>
                 </ul>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- UPGRADE INSTEAD OF REPLACE -->
     <section>
+
         <h2>Upgrade Instead of Replace</h2>
 
         <div class="two-column">
 
+
             <div class="service-card">
+
                 <h3>Memory Upgrades</h3>
 
                 <p>
@@ -341,10 +465,14 @@
                     We can evaluate compatible memory options and install the
                     appropriate upgrade when the system supports expansion.
                 </p>
+
             </div>
 
+
+
             <div class="service-card">
-                <h3>SSD & NVMe Upgrades</h3>
+
+                <h3>SSD &amp; NVMe Upgrades</h3>
 
                 <p>
                     Replacing an older hard drive with an SSD or upgrading to
@@ -356,14 +484,19 @@
                     Services may include installation, storage replacement,
                     operating-system migration, and basic system verification.
                 </p>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- DESKTOP & WORKSTATION -->
     <section class="info-card">
-        <h2>Desktop & Workstation Services</h2>
+
+        <h2>Desktop &amp; Workstation Services</h2>
 
         <p>
             We support desktop computers and business workstations that require
@@ -390,15 +523,21 @@
             Hardware compatibility is evaluated before installation whenever
             possible to reduce the risk of purchasing unsuitable components.
         </p>
+
     </section>
 
 
+
+    <!-- NEW COMPUTER SETUP -->
     <section>
-        <h2>New Computer & Workstation Setup</h2>
+
+        <h2>New Computer &amp; Workstation Setup</h2>
 
         <div class="two-column">
 
+
             <div class="service-card">
+
                 <h3>System Setup</h3>
 
                 <p>
@@ -415,9 +554,13 @@
                     <li>Network connectivity</li>
                     <li>Basic system updates</li>
                 </ul>
+
             </div>
 
+
+
             <div class="service-card">
+
                 <h3>Data Migration</h3>
 
                 <p>
@@ -431,14 +574,19 @@
                     depending on the condition of the source computer and
                     storage device.
                 </p>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- PERFORMANCE -->
     <section class="info-card">
-        <h2>Performance & Reliability</h2>
+
+        <h2>Performance &amp; Reliability</h2>
 
         <p>
             Computer problems are not always caused by one failed component.
@@ -465,55 +613,87 @@
             <li>Updating system configuration</li>
             <li>Performing operating-system troubleshooting</li>
         </ul>
+
     </section>
 
 
+
+    <!-- HOW SERVICE WORKS -->
     <section>
+
         <h2>How Computer Service Works</h2>
 
         <div class="steps">
 
+
             <div class="step">
+
                 <div class="step-number">1</div>
+
                 <h3>Describe the Problem</h3>
+
                 <p>
                     Tell us what the computer is doing and what you would like
                     to improve.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">2</div>
+
                 <h3>Evaluation</h3>
+
                 <p>
                     We evaluate the system, available upgrade options, and
                     likely cause of the problem.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">3</div>
+
                 <h3>Recommendation</h3>
+
                 <p>
                     We explain the proposed upgrade or repair before moving
                     forward.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">4</div>
-                <h3>Installation & Testing</h3>
+
+                <h3>Installation &amp; Testing</h3>
+
                 <p>
                     Approved work is completed and the system is tested for
                     basic operation.
                 </p>
+
             </div>
 
+
         </div>
+
     </section>
 
 
+
+    <!-- SMALL BUSINESS -->
     <section class="info-card">
+
         <h2>Computer Services for Small Businesses</h2>
 
         <p>
@@ -536,10 +716,14 @@
             <li>Basic network connectivity troubleshooting</li>
             <li>Hardware diagnostics</li>
         </ul>
+
     </section>
 
 
+
+    <!-- IMPORTANT INFORMATION -->
     <section class="notice">
+
         <h2>Important Computer Service Information</h2>
 
         <p>
@@ -559,10 +743,14 @@
             device or computer is already damaged, corrupted, encrypted,
             inaccessible, or failing.
         </p>
+
     </section>
 
 
+
+    <!-- CALL TO ACTION -->
     <section class="cta">
+
         <h2>Need Help With a Computer?</h2>
 
         <p>
@@ -571,12 +759,18 @@
             practical step.
         </p>
 
-        <a href="contact.html" class="button">Request Computer Service</a>
+        <a href="contact.html" class="button">
+            Request Computer Service
+        </a>
+
     </section>
+
 
 </main>
 
 
+
+<!-- FOOTER -->
 <footer>
 
     <p>
@@ -603,6 +797,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
-```
