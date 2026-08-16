@@ -1,17 +1,19 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>GPS Vehicle Tracking & Monitoring | UK AND ASSOCIATES LLC</title>
 
-    <meta name="description" content="UK AND ASSOCIATES LLC provides GPS vehicle tracking and monitoring services in Philadelphia, PA, including real-time location, geofencing, towing alerts, disconnect alerts, and professional tracker installation.">
+    <meta name="description"
+        content="UK AND ASSOCIATES LLC provides GPS vehicle tracking and monitoring services in Philadelphia, PA, including real-time location, geofencing, towing alerts, disconnect alerts, and professional tracker installation.">
 
     <link rel="stylesheet" href="styles.css">
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,24 +33,51 @@
             color: #0056b3;
         }
 
+
+        /* Interior Page Header */
         header {
             background-color: #0056b3;
             color: white;
-            padding: 3rem 1rem;
-            text-align: center;
+            padding: 1.5rem 5%;
         }
 
-        header h1 {
-            font-size: 2.7rem;
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-size: 2.2rem;
             margin: 0;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            margin: 0.75rem 0 0;
             color: white;
         }
 
+        .header-text p {
+            font-size: 1.15rem;
+            margin: 0.5rem 0 0;
+            color: white;
+        }
+
+        .header-logo {
+            display: block;
+            width: 200px;
+            max-width: 28%;
+            height: auto;
+            background-color: white;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+
+        /* Navigation */
         nav {
             text-align: center;
             background-color: white;
@@ -68,6 +97,8 @@
             color: white;
         }
 
+
+        /* Main Content */
         main {
             max-width: 1100px;
             margin: auto;
@@ -90,6 +121,8 @@
             color: #555;
         }
 
+
+        /* Intro */
         .intro {
             text-align: center;
             margin-bottom: 3rem;
@@ -101,6 +134,8 @@
             margin-right: auto;
         }
 
+
+        /* Cards */
         .service-card,
         .info-card {
             background-color: white;
@@ -110,6 +145,8 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
+
+        /* Two-column layouts */
         .two-column {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -126,6 +163,8 @@
             margin-bottom: 10px;
         }
 
+
+        /* Process Steps */
         .steps {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -153,6 +192,8 @@
             font-size: 1.1rem;
         }
 
+
+        /* Important Notice */
         .notice {
             background-color: #fff8e6;
             border-left: 5px solid #e0a800;
@@ -165,6 +206,8 @@
             color: #333;
         }
 
+
+        /* Privacy */
         .privacy-box {
             background-color: #eef6ff;
             border-left: 5px solid #0056b3;
@@ -173,6 +216,8 @@
             border-radius: 4px;
         }
 
+
+        /* Buttons */
         .button {
             display: inline-block;
             background-color: #0056b3;
@@ -188,6 +233,8 @@
             color: white;
         }
 
+
+        /* Call To Action */
         .cta {
             text-align: center;
             margin-top: 4rem;
@@ -200,6 +247,8 @@
             margin-top: 0;
         }
 
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -216,20 +265,37 @@
             color: #7db7ff;
         }
 
+
+        /* Tablet */
         @media (max-width: 900px) {
+
             .two-column,
             .steps {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
+
+        /* Mobile */
         @media (max-width: 768px) {
-            header h1 {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .header-text h1 {
                 font-size: 2rem;
             }
 
-            header p {
+            .header-text p {
                 font-size: 1.05rem;
+            }
+
+            .header-logo {
+                width: 200px;
+                max-width: 80%;
             }
 
             nav a {
@@ -243,7 +309,10 @@
             }
         }
 
+
+        /* Small Phones */
         @media (max-width: 600px) {
+
             nav a {
                 display: block;
                 margin: 0;
@@ -254,18 +323,50 @@
             .steps {
                 grid-template-columns: 1fr;
             }
+
+            .header-logo {
+                width: 190px;
+                max-width: 85%;
+            }
         }
+
     </style>
 </head>
 
+
 <body>
 
+
+<!-- HEADER -->
 <header>
-    <h1>UK AND ASSOCIATES LLC</h1>
-    <p>GPS Vehicle Tracking & Monitoring Solutions</p>
+
+    <div class="header-content">
+
+        <div class="header-text">
+
+            <h1>UK AND ASSOCIATES LLC</h1>
+
+            <p>
+                GPS Vehicle Tracking &amp; Monitoring Solutions
+            </p>
+
+        </div>
+
+
+        <img
+            src="images/uk-associates-logo.jpg"
+            alt="UK AND ASSOCIATES LLC Technology Solutions"
+            class="header-logo"
+        >
+
+    </div>
+
 </header>
 
+
+<!-- NAVIGATION -->
 <nav>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="gps-tracking.html">GPS Tracking</a>
@@ -274,11 +375,16 @@
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
+
 </nav>
+
 
 <main>
 
+
+    <!-- INTRO -->
     <section class="intro">
+
         <h2>Know Where Your Vehicle Is When It Matters</h2>
 
         <p>
@@ -293,11 +399,17 @@
             information through an approved monitoring platform.
         </p>
 
-        <a href="contact.html" class="button">Request GPS Tracking Service</a>
+        <a href="contact.html" class="button">
+            Request GPS Tracking Service
+        </a>
+
     </section>
 
 
+
+    <!-- GPS FEATURES -->
     <section class="info-card">
+
         <h2>GPS Tracking Features</h2>
 
         <p>
@@ -308,7 +420,9 @@
         <div class="two-column">
 
             <div>
-                <h3>Vehicle Location & Movement</h3>
+
+                <h3>Vehicle Location &amp; Movement</h3>
+
                 <ul>
                     <li>Real-time vehicle location</li>
                     <li>Trip and route history</li>
@@ -317,10 +431,14 @@
                     <li>Automatic trip detection</li>
                     <li>Geofencing</li>
                 </ul>
+
             </div>
 
+
             <div>
-                <h3>Security & Alerts</h3>
+
+                <h3>Security &amp; Alerts</h3>
+
                 <ul>
                     <li>Towing detection</li>
                     <li>Unauthorized movement alerts</li>
@@ -329,18 +447,25 @@
                     <li>Overspeed alerts</li>
                     <li>Crash or event detection on supported equipment</li>
                 </ul>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- INSTALLATION OPTIONS -->
     <section>
+
         <h2>Installation Options</h2>
 
         <div class="two-column">
 
+
             <div class="service-card">
+
                 <h3>Easy-Install GPS Tracking</h3>
 
                 <p>
@@ -365,10 +490,13 @@
                     This option may be suitable for personal vehicles and
                     customers who prefer a faster installation.
                 </p>
+
             </div>
 
 
+
             <div class="service-card">
+
                 <h3>Professional Hardwired GPS Tracking</h3>
 
                 <p>
@@ -395,13 +523,18 @@
                     Advanced features are evaluated based on the vehicle,
                     equipment, and customer's specific requirements.
                 </p>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- MONITORING -->
     <section class="info-card">
+
         <h2>Monitoring Service</h2>
 
         <p>
@@ -429,56 +562,88 @@
             Monitoring features and data availability vary based on the
             equipment, connectivity, service plan, and platform configuration.
         </p>
+
     </section>
 
 
+
+    <!-- HOW IT WORKS -->
     <section>
+
         <h2>How It Works</h2>
 
         <div class="steps">
 
+
             <div class="step">
+
                 <div class="step-number">1</div>
+
                 <h3>Consultation</h3>
+
                 <p>
                     We discuss your vehicle, tracking goals, and desired
                     features.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">2</div>
+
                 <h3>Device Selection</h3>
+
                 <p>
                     We recommend a GPS tracker and installation approach
                     appropriate for your application.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">3</div>
+
                 <h3>Installation</h3>
+
                 <p>
                     The tracker is installed, configured, tested, and connected
                     to the monitoring service.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">4</div>
+
                 <h3>Customer Access</h3>
+
                 <p>
                     You receive access to available location and monitoring
                     information for your vehicle.
                 </p>
+
             </div>
 
+
         </div>
+
     </section>
 
 
+
+    <!-- PRIVACY -->
     <section class="privacy-box">
-        <h2>Privacy & Authorized Use</h2>
+
+        <h2>Privacy &amp; Authorized Use</h2>
 
         <p>
             UK AND ASSOCIATES LLC takes customer privacy and lawful use of GPS
@@ -502,17 +667,24 @@
         </p>
 
         <p>
-            <a href="privacy.html">Read our Privacy Policy →</a>
+            <a href="privacy.html">
+                Read our Privacy Policy →
+            </a>
         </p>
+
     </section>
 
 
+
+    <!-- IMPORTANT INFORMATION -->
     <section class="notice">
+
         <h2>Important Service Information</h2>
 
         <p>
-            <strong>GPS tracking does not guarantee theft prevention or vehicle
-            recovery.</strong>
+            <strong>
+                GPS tracking does not guarantee theft prevention or vehicle recovery.
+            </strong>
         </p>
 
         <p>
@@ -527,47 +699,69 @@
             particular outcome following vehicle theft, towing, unauthorized
             movement, or another event.
         </p>
+
     </section>
 
 
+
+    <!-- CUSTOMER TYPES -->
     <section class="info-card">
+
         <h2>Who Can Benefit From GPS Tracking?</h2>
 
         <div class="two-column">
 
+
             <div>
+
                 <h3>Personal Vehicle Owners</h3>
+
                 <p>
                     Improve visibility of a personal vehicle and receive useful
                     information about vehicle location and movement.
                 </p>
 
+
                 <h3>Small Businesses</h3>
+
                 <p>
                     Track company-owned vehicles and improve visibility of
                     business transportation assets.
                 </p>
+
             </div>
 
+
+
             <div>
+
                 <h3>Light Commercial Fleets</h3>
+
                 <p>
                     Monitor multiple vehicles, review trip activity, and use
                     supported alerts to improve fleet awareness.
                 </p>
 
+
                 <h3>Specialty Applications</h3>
+
                 <p>
                     Additional GPS tracking applications may be available based
                     on equipment capabilities and lawful customer requirements.
                 </p>
+
             </div>
 
+
         </div>
+
     </section>
 
 
+
+    <!-- CALL TO ACTION -->
     <section class="cta">
+
         <h2>Interested in GPS Tracking?</h2>
 
         <p>
@@ -576,12 +770,18 @@
             monitoring option.
         </p>
 
-        <a href="contact.html" class="button">Request a GPS Consultation</a>
+        <a href="contact.html" class="button">
+            Request a GPS Consultation
+        </a>
+
     </section>
+
 
 </main>
 
 
+
+<!-- FOOTER -->
 <footer>
 
     <p>
@@ -608,6 +808,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
-```
