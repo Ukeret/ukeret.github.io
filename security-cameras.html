@@ -1,17 +1,20 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Security Camera Installation | UK AND ASSOCIATES LLC</title>
 
-    <meta name="description" content="UK AND ASSOCIATES LLC provides professional residential and commercial security camera installation in Philadelphia, PA, including DVR/NVR setup, cabling, remote viewing, and system upgrades.">
+    <meta name="description"
+        content="UK AND ASSOCIATES LLC provides professional residential and commercial security camera installation in Philadelphia, PA, including DVR/NVR setup, cabling, remote viewing, and system upgrades.">
 
     <link rel="stylesheet" href="styles.css">
 
     <style>
+
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,24 +34,51 @@
             color: #0056b3;
         }
 
+
+        /* Interior Page Header */
         header {
             background-color: #0056b3;
             color: white;
-            padding: 3rem 1rem;
-            text-align: center;
+            padding: 1.5rem 5%;
         }
 
-        header h1 {
-            font-size: 2.7rem;
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-size: 2.2rem;
             margin: 0;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            margin: 0.75rem 0 0;
             color: white;
         }
 
+        .header-text p {
+            font-size: 1.15rem;
+            margin: 0.5rem 0 0;
+            color: white;
+        }
+
+        .header-logo {
+            display: block;
+            width: 200px;
+            max-width: 28%;
+            height: auto;
+            background-color: white;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+
+        /* Navigation */
         nav {
             text-align: center;
             background-color: white;
@@ -68,6 +98,8 @@
             color: white;
         }
 
+
+        /* Main Content */
         main {
             max-width: 1100px;
             margin: auto;
@@ -90,6 +122,8 @@
             color: #555;
         }
 
+
+        /* Intro */
         .intro {
             text-align: center;
             margin-bottom: 3rem;
@@ -101,6 +135,8 @@
             margin-right: auto;
         }
 
+
+        /* Cards */
         .info-card,
         .service-card {
             background-color: white;
@@ -110,6 +146,8 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
+
+        /* Two Column Layout */
         .two-column {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -126,6 +164,8 @@
             margin-bottom: 10px;
         }
 
+
+        /* Installation Steps */
         .steps {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -153,6 +193,8 @@
             font-size: 1.1rem;
         }
 
+
+        /* Important Notice */
         .notice {
             background-color: #fff8e6;
             border-left: 5px solid #e0a800;
@@ -161,6 +203,8 @@
             border-radius: 4px;
         }
 
+
+        /* Buttons */
         .button {
             display: inline-block;
             background-color: #0056b3;
@@ -176,6 +220,8 @@
             color: white;
         }
 
+
+        /* Call To Action */
         .cta {
             text-align: center;
             margin-top: 4rem;
@@ -188,6 +234,8 @@
             margin-top: 0;
         }
 
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -204,20 +252,37 @@
             color: #7db7ff;
         }
 
+
+        /* Tablet */
         @media (max-width: 900px) {
+
             .two-column,
             .steps {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
+
+        /* Mobile */
         @media (max-width: 768px) {
-            header h1 {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .header-text h1 {
                 font-size: 2rem;
             }
 
-            header p {
+            .header-text p {
                 font-size: 1.05rem;
+            }
+
+            .header-logo {
+                width: 200px;
+                max-width: 80%;
             }
 
             nav a {
@@ -231,7 +296,10 @@
             }
         }
 
+
+        /* Small Phones */
         @media (max-width: 600px) {
+
             nav a {
                 display: block;
                 margin: 0;
@@ -242,18 +310,50 @@
             .steps {
                 grid-template-columns: 1fr;
             }
+
+            .header-logo {
+                width: 190px;
+                max-width: 85%;
+            }
         }
+
     </style>
 </head>
 
+
 <body>
 
+
+<!-- HEADER -->
 <header>
-    <h1>UK AND ASSOCIATES LLC</h1>
-    <p>Professional Security Camera Installation</p>
+
+    <div class="header-content">
+
+        <div class="header-text">
+
+            <h1>UK AND ASSOCIATES LLC</h1>
+
+            <p>
+                Professional Security Camera Installation
+            </p>
+
+        </div>
+
+
+        <img
+            src="images/uk-associates-logo.jpg"
+            alt="UK AND ASSOCIATES LLC Technology Solutions"
+            class="header-logo"
+        >
+
+    </div>
+
 </header>
 
+
+<!-- NAVIGATION -->
 <nav>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="gps-tracking.html">GPS Tracking</a>
@@ -262,12 +362,19 @@
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
+
 </nav>
+
 
 <main>
 
+
+    <!-- INTRO -->
     <section class="intro">
-        <h2>Protect What Matters With a Properly Designed Surveillance System</h2>
+
+        <h2>
+            Protect What Matters With a Properly Designed Surveillance System
+        </h2>
 
         <p>
             UK AND ASSOCIATES LLC provides professional security camera
@@ -282,17 +389,25 @@
             matters most.
         </p>
 
-        <a href="contact.html" class="button">Request a Security Camera Consultation</a>
+        <a href="contact.html" class="button">
+            Request a Security Camera Consultation
+        </a>
+
     </section>
 
 
+
+    <!-- SECURITY CAMERA SERVICES -->
     <section class="info-card">
+
         <h2>Security Camera Services</h2>
 
         <div class="two-column">
 
             <div>
+
                 <h3>Camera Installation</h3>
+
                 <ul>
                     <li>Indoor camera installation</li>
                     <li>Outdoor camera installation</li>
@@ -301,10 +416,14 @@
                     <li>Commercial surveillance systems</li>
                     <li>Parking-area and perimeter coverage</li>
                 </ul>
+
             </div>
 
+
             <div>
-                <h3>System Setup & Configuration</h3>
+
+                <h3>System Setup &amp; Configuration</h3>
+
                 <ul>
                     <li>DVR and NVR installation</li>
                     <li>Analog and IP camera systems</li>
@@ -313,18 +432,25 @@
                     <li>Monitor and display configuration</li>
                     <li>Mobile and computer viewing setup where supported</li>
                 </ul>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- RESIDENTIAL & COMMERCIAL -->
     <section>
-        <h2>Residential & Commercial Solutions</h2>
+
+        <h2>Residential &amp; Commercial Solutions</h2>
 
         <div class="two-column">
 
+
             <div class="service-card">
+
                 <h3>Residential Security Cameras</h3>
 
                 <p>
@@ -349,10 +475,13 @@
                     We work with the customer to balance useful coverage,
                     camera placement, appearance, and available cabling routes.
                 </p>
+
             </div>
 
 
+
             <div class="service-card">
+
                 <h3>Commercial Security Cameras</h3>
 
                 <p>
@@ -378,14 +507,19 @@
                     Camera placement is planned around the customer's property,
                     risk areas, existing equipment, and surveillance goals.
                 </p>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- CAMERA SYSTEM OPTIONS -->
     <section class="info-card">
-        <h2>Camera & Recording System Options</h2>
+
+        <h2>Camera &amp; Recording System Options</h2>
 
         <p>
             We can work with different surveillance technologies depending on
@@ -394,7 +528,9 @@
 
         <div class="two-column">
 
+
             <div>
+
                 <h3>Analog / DVR Systems</h3>
 
                 <p>
@@ -409,9 +545,13 @@
                     <li>Coaxial camera cabling</li>
                     <li>Existing-system upgrades</li>
                 </ul>
+
             </div>
 
+
+
             <div>
+
                 <h3>IP / NVR Systems</h3>
 
                 <p>
@@ -425,14 +565,19 @@
                     <li>Ethernet cabling</li>
                     <li>PoE network configuration where applicable</li>
                 </ul>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- CAMERA PLACEMENT -->
     <section class="info-card">
-        <h2>Camera Placement & Coverage Planning</h2>
+
+        <h2>Camera Placement &amp; Coverage Planning</h2>
 
         <p>
             A good surveillance system depends on more than the number of
@@ -456,56 +601,88 @@
             <li>Monitor location</li>
             <li>Network access for remote viewing</li>
         </ul>
+
     </section>
 
 
+
+    <!-- INSTALLATION PROCESS -->
     <section>
+
         <h2>How the Installation Process Works</h2>
 
         <div class="steps">
 
+
             <div class="step">
+
                 <div class="step-number">1</div>
+
                 <h3>Consultation</h3>
+
                 <p>
                     We discuss the property, security concerns, and desired
                     camera coverage.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">2</div>
+
                 <h3>System Planning</h3>
+
                 <p>
                     We determine suitable camera locations, equipment, and
                     installation requirements.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">3</div>
+
                 <h3>Installation</h3>
+
                 <p>
                     Cameras, cabling, recording equipment, and related hardware
                     are installed and configured.
                 </p>
+
             </div>
 
+
+
             <div class="step">
+
                 <div class="step-number">4</div>
-                <h3>Testing & Setup</h3>
+
+                <h3>Testing &amp; Setup</h3>
+
                 <p>
                     We verify camera views, recording operation, and supported
                     remote-access features.
                 </p>
+
             </div>
 
+
         </div>
+
     </section>
 
 
+
+    <!-- UPGRADES & TROUBLESHOOTING -->
     <section class="info-card">
-        <h2>Existing System Upgrades & Troubleshooting</h2>
+
+        <h2>Existing System Upgrades &amp; Troubleshooting</h2>
 
         <p>
             You may not need an entirely new surveillance system.
@@ -531,10 +708,14 @@
             <li>Improving monitor or display setup</li>
             <li>Basic recorder and network troubleshooting</li>
         </ul>
+
     </section>
 
 
+
+    <!-- IMPORTANT INFORMATION -->
     <section class="notice">
+
         <h2>Important Security Camera Information</h2>
 
         <p>
@@ -554,10 +735,14 @@
             accordance with applicable privacy, recording, workplace, and
             property laws.
         </p>
+
     </section>
 
 
+
+    <!-- CALL TO ACTION -->
     <section class="cta">
+
         <h2>Planning a Security Camera Project?</h2>
 
         <p>
@@ -566,12 +751,18 @@
             appropriate installation approach.
         </p>
 
-        <a href="contact.html" class="button">Request a Camera Consultation</a>
+        <a href="contact.html" class="button">
+            Request a Camera Consultation
+        </a>
+
     </section>
+
 
 </main>
 
 
+
+<!-- FOOTER -->
 <footer>
 
     <p>
@@ -598,6 +789,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
-```
