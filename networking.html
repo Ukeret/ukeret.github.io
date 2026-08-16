@@ -1,17 +1,19 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Network Installation & Support | UK AND ASSOCIATES LLC</title>
 
-    <meta name="description" content="UK AND ASSOCIATES LLC provides network installation and support in Philadelphia, PA, including Ethernet cabling, routers, switches, Wi-Fi, server connectivity, and network troubleshooting.">
+    <meta name="description"
+        content="UK AND ASSOCIATES LLC provides network installation and support in Philadelphia, PA, including Ethernet cabling, routers, switches, Wi-Fi, server connectivity, and network troubleshooting.">
 
     <link rel="stylesheet" href="styles.css">
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,24 +33,51 @@
             color: #0056b3;
         }
 
+
+        /* Interior Page Header */
         header {
             background-color: #0056b3;
             color: white;
-            padding: 3rem 1rem;
-            text-align: center;
+            padding: 1.5rem 5%;
         }
 
-        header h1 {
-            font-size: 2.7rem;
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-size: 2.2rem;
             margin: 0;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            margin: 0.75rem 0 0;
             color: white;
         }
 
+        .header-text p {
+            font-size: 1.15rem;
+            margin: 0.5rem 0 0;
+            color: white;
+        }
+
+        .header-logo {
+            display: block;
+            width: 200px;
+            max-width: 28%;
+            height: auto;
+            background-color: white;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+
+        /* Navigation */
         nav {
             text-align: center;
             background-color: white;
@@ -68,6 +97,8 @@
             color: white;
         }
 
+
+        /* Main Content */
         main {
             max-width: 1100px;
             margin: auto;
@@ -90,6 +121,8 @@
             color: #555;
         }
 
+
+        /* Intro */
         .intro {
             text-align: center;
             margin-bottom: 3rem;
@@ -101,6 +134,8 @@
             margin-right: auto;
         }
 
+
+        /* Cards */
         .info-card,
         .service-card {
             background-color: white;
@@ -110,6 +145,8 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
+
+        /* Two Column Layout */
         .two-column {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -126,6 +163,8 @@
             margin-bottom: 10px;
         }
 
+
+        /* Steps */
         .steps {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -153,6 +192,8 @@
             font-size: 1.1rem;
         }
 
+
+        /* Notice */
         .notice {
             background-color: #fff8e6;
             border-left: 5px solid #e0a800;
@@ -161,6 +202,8 @@
             border-radius: 4px;
         }
 
+
+        /* Buttons */
         .button {
             display: inline-block;
             background-color: #0056b3;
@@ -176,6 +219,8 @@
             color: white;
         }
 
+
+        /* Call To Action */
         .cta {
             text-align: center;
             margin-top: 4rem;
@@ -188,6 +233,8 @@
             margin-top: 0;
         }
 
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -204,20 +251,37 @@
             color: #7db7ff;
         }
 
+
+        /* Tablet */
         @media (max-width: 900px) {
+
             .two-column,
             .steps {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
+
+        /* Mobile */
         @media (max-width: 768px) {
-            header h1 {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .header-text h1 {
                 font-size: 2rem;
             }
 
-            header p {
+            .header-text p {
                 font-size: 1.05rem;
+            }
+
+            .header-logo {
+                width: 200px;
+                max-width: 80%;
             }
 
             nav a {
@@ -231,7 +295,10 @@
             }
         }
 
+
+        /* Small Phones */
         @media (max-width: 600px) {
+
             nav a {
                 display: block;
                 margin: 0;
@@ -242,18 +309,51 @@
             .steps {
                 grid-template-columns: 1fr;
             }
+
+            .header-logo {
+                width: 190px;
+                max-width: 85%;
+            }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
 <header>
-    <h1>UK AND ASSOCIATES LLC</h1>
-    <p>Network Installation, Configuration & Support</p>
+
+    <div class="header-content">
+
+        <div class="header-text">
+
+            <h1>UK AND ASSOCIATES LLC</h1>
+
+            <p>
+                Network Installation, Configuration &amp; Support
+            </p>
+
+        </div>
+
+
+        <img
+            src="images/uk-associates-logo.jpg"
+            alt="UK AND ASSOCIATES LLC Technology Solutions"
+            class="header-logo"
+        >
+
+    </div>
+
 </header>
 
+
+<!-- NAVIGATION -->
 <nav>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="gps-tracking.html">GPS Tracking</a>
@@ -262,11 +362,16 @@
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
+
 </nav>
+
 
 <main>
 
+
+    <!-- INTRO -->
     <section class="intro">
+
         <h2>Reliable Connectivity for Homes and Businesses</h2>
 
         <p>
@@ -282,16 +387,23 @@
             customer's environment.
         </p>
 
-        <a href="contact.html" class="button">Request Network Service</a>
+        <a href="contact.html" class="button">
+            Request Network Service
+        </a>
+
     </section>
 
 
+
+    <!-- NETWORK SERVICES -->
     <section class="info-card">
+
         <h2>Network Services</h2>
 
         <div class="two-column">
 
             <div>
+
                 <h3>Network Installation</h3>
 
                 <ul>
@@ -304,10 +416,13 @@
                     <li>Printer connectivity</li>
                     <li>Server connectivity</li>
                 </ul>
+
             </div>
 
+
             <div>
-                <h3>Configuration & Troubleshooting</h3>
+
+                <h3>Configuration &amp; Troubleshooting</h3>
 
                 <ul>
                     <li>Router configuration</li>
@@ -319,18 +434,25 @@
                     <li>Network expansion</li>
                     <li>Existing network cleanup and organization</li>
                 </ul>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- RESIDENTIAL & BUSINESS -->
     <section>
-        <h2>Residential & Small-Business Networking</h2>
+
+        <h2>Residential &amp; Small-Business Networking</h2>
 
         <div class="two-column">
 
+
             <div class="service-card">
+
                 <h3>Residential Networks</h3>
 
                 <p>
@@ -351,10 +473,13 @@
                     <li>Printer connectivity</li>
                     <li>Security camera network connectivity</li>
                 </ul>
+
             </div>
 
 
+
             <div class="service-card">
+
                 <h3>Small-Business Networks</h3>
 
                 <p>
@@ -377,14 +502,19 @@
                     <li>Surveillance-system networking</li>
                     <li>Network expansion and upgrades</li>
                 </ul>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- ETHERNET -->
     <section class="info-card">
-        <h2>Ethernet Cabling & Network Drops</h2>
+
+        <h2>Ethernet Cabling &amp; Network Drops</h2>
 
         <p>
             Wired Ethernet can provide reliable connectivity for devices that
@@ -412,15 +542,21 @@
             building, equipment locations, accessibility, and project
             requirements.
         </p>
+
     </section>
 
 
+
+    <!-- ROUTERS & SWITCHES -->
     <section>
-        <h2>Routers, Switches & Network Equipment</h2>
+
+        <h2>Routers, Switches &amp; Network Equipment</h2>
 
         <div class="two-column">
 
+
             <div class="service-card">
+
                 <h3>Router Configuration</h3>
 
                 <p>
@@ -441,10 +577,13 @@
                     <li>Wi-Fi setup where supported</li>
                     <li>Connected-device troubleshooting</li>
                 </ul>
+
             </div>
 
 
+
             <div class="service-card">
+
                 <h3>Network Switches</h3>
 
                 <p>
@@ -465,14 +604,19 @@
                     <li>Expansion of existing networks</li>
                     <li>Basic managed-switch configuration where applicable</li>
                 </ul>
+
             </div>
 
         </div>
+
     </section>
 
 
+
+    <!-- WIFI -->
     <section class="info-card">
-        <h2>Wi-Fi Setup & Troubleshooting</h2>
+
+        <h2>Wi-Fi Setup &amp; Troubleshooting</h2>
 
         <p>
             Wireless performance can be affected by distance, building
@@ -497,11 +641,15 @@
             Where practical, wired network connections may be recommended for
             equipment requiring consistent connectivity or higher reliability.
         </p>
+
     </section>
 
 
+
+    <!-- SERVER CONNECTIVITY -->
     <section class="info-card">
-        <h2>Server & Workstation Connectivity</h2>
+
+        <h2>Server &amp; Workstation Connectivity</h2>
 
         <p>
             UK AND ASSOCIATES LLC can assist with connecting computers,
@@ -521,15 +669,21 @@
             <li>Basic connectivity testing</li>
             <li>Connection troubleshooting between network devices</li>
         </ul>
+
     </section>
 
 
+
+    <!-- PROCESS -->
     <section>
+
         <h2>How Network Service Works</h2>
 
         <div class="steps">
 
+
             <div class="step">
+
                 <div class="step-number">1</div>
 
                 <h3>Consultation</h3>
@@ -538,10 +692,13 @@
                     We discuss the devices, connectivity problem, or network
                     expansion you need.
                 </p>
+
             </div>
 
 
+
             <div class="step">
+
                 <div class="step-number">2</div>
 
                 <h3>Network Evaluation</h3>
@@ -550,10 +707,13 @@
                     We review the existing equipment, connections, cabling, and
                     installation requirements.
                 </p>
+
             </div>
 
 
+
             <div class="step">
+
                 <div class="step-number">3</div>
 
                 <h3>Installation</h3>
@@ -562,10 +722,13 @@
                     Approved cabling, routers, switches, or other network
                     equipment are installed or configured.
                 </p>
+
             </div>
 
 
+
             <div class="step">
+
                 <div class="step-number">4</div>
 
                 <h3>Testing</h3>
@@ -574,14 +737,20 @@
                     We test basic network connectivity and verify that supported
                     devices are communicating as expected.
                 </p>
+
             </div>
 
+
         </div>
+
     </section>
 
 
+
+    <!-- EXPANSION -->
     <section class="info-card">
-        <h2>Network Expansion & Cleanup</h2>
+
+        <h2>Network Expansion &amp; Cleanup</h2>
 
         <p>
             Networks often grow gradually as additional computers, printers,
@@ -607,10 +776,14 @@
             <li>Improving equipment layout</li>
             <li>Planning for future network growth</li>
         </ul>
+
     </section>
 
 
+
+    <!-- IMPORTANT INFORMATION -->
     <section class="notice">
+
         <h2>Important Network Service Information</h2>
 
         <p>
@@ -633,10 +806,14 @@
             configuration information before significant network or server
             changes are performed.
         </p>
+
     </section>
 
 
+
+    <!-- CALL TO ACTION -->
     <section class="cta">
+
         <h2>Need a Better Network?</h2>
 
         <p>
@@ -645,12 +822,18 @@
             determine the right installation or troubleshooting approach.
         </p>
 
-        <a href="contact.html" class="button">Request Network Service</a>
+        <a href="contact.html" class="button">
+            Request Network Service
+        </a>
+
     </section>
+
 
 </main>
 
 
+
+<!-- FOOTER -->
 <footer>
 
     <p>
@@ -677,6 +860,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
-```
