@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact | UK AND ASSOCIATES LLC</title>
+    <title>Contact UK AND ASSOCIATES LLC | Technology Services in Philadelphia, PA</title>
 
     <meta name="description"
-        content="Contact UK AND ASSOCIATES LLC for GPS tracking, security camera installation, computer services, and networking support in Philadelphia, PA.">
+        content="Contact UK AND ASSOCIATES LLC for GPS vehicle tracking, security camera installation, computer repair and upgrades, and network installation and support in Philadelphia, PA.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://ukandassociates.com/contact.html">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -94,6 +99,15 @@
 
         nav a:hover {
             background-color: #007BFF;
+            color: white;
+        }
+
+        nav a[aria-current="page"] {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        nav a[aria-current="page"]:hover {
             color: white;
         }
 
@@ -215,6 +229,7 @@
 
         .button:hover {
             background-color: #003f85;
+            color: white;
         }
 
 
@@ -349,7 +364,7 @@
 
         <img
             src="images/uk-associates-logo.jpg"
-            alt="UK AND ASSOCIATES LLC Technology Solutions"
+            alt="UK AND ASSOCIATES LLC logo"
             class="header-logo"
         >
 
@@ -359,7 +374,7 @@
 
 
 <!-- NAVIGATION -->
-<nav>
+<nav aria-label="Primary navigation">
 
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
@@ -368,7 +383,11 @@
     <a href="computer-services.html">Computer Services</a>
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
+
+    <a href="contact.html"
+       aria-current="page">
+        Contact
+    </a>
 
 </nav>
 
@@ -379,17 +398,17 @@
     <!-- INTRO -->
     <section class="intro">
 
-        <h2>How Can We Help?</h2>
+        <h2>Contact UK AND ASSOCIATES LLC</h2>
 
         <p>
             Tell us about the service you need, the problem you are experiencing,
-            or the project you are planning.
+            or the technology project you are planning.
         </p>
 
         <p>
-            UK AND ASSOCIATES LLC provides GPS tracking, security camera
-            installation, computer services, and network installation and
-            support throughout the Philadelphia area.
+            UK AND ASSOCIATES LLC provides GPS vehicle tracking, security camera
+            installation, computer repair and upgrades, and network installation
+            and support throughout the Philadelphia area.
         </p>
 
     </section>
@@ -411,7 +430,9 @@
 
             <p>
                 <strong>Phone:</strong><br>
-                <a href="tel:2676156700">267-615-6700</a>
+                <a href="tel:2676156700">
+                    267-615-6700
+                </a>
             </p>
 
             <p>
@@ -448,74 +469,126 @@
                 This helps us understand your request before contacting you.
             </p>
 
-            <form action="https://formspree.io/f/meoeegrb" method="POST">
+            <form
+                action="https://formspree.io/f/meoeegrb"
+                method="POST"
+            >
 
-                <label for="name">Name *</label>
+                <label for="name">
+                    Name *
+                </label>
+
                 <input
                     type="text"
                     id="name"
                     name="name"
+                    autocomplete="name"
                     required
                 >
 
-                <label for="business">Business Name (if applicable)</label>
+
+                <label for="business">
+                    Business Name (if applicable)
+                </label>
+
                 <input
                     type="text"
                     id="business"
                     name="business"
+                    autocomplete="organization"
                 >
 
-                <label for="email">Email *</label>
+
+                <label for="email">
+                    Email *
+                </label>
+
                 <input
                     type="email"
                     id="email"
                     name="email"
+                    autocomplete="email"
                     required
                 >
 
-                <label for="phone">Phone Number</label>
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
                 <input
                     type="tel"
                     id="phone"
                     name="phone"
+                    autocomplete="tel"
                 >
 
-                <label for="service">Service Needed *</label>
+
+                <label for="service">
+                    Service Needed *
+                </label>
+
                 <select
                     id="service"
                     name="service"
                     required
                 >
-                    <option value="">Select a Service</option>
+                    <option value="">
+                        Select a Service
+                    </option>
+
                     <option value="gps-tracking">
                         GPS Vehicle Tracking &amp; Monitoring
                     </option>
+
                     <option value="security-cameras">
                         Security Camera Installation
                     </option>
+
                     <option value="computer-services">
                         Computer Upgrades &amp; Repair
                     </option>
+
                     <option value="networking">
                         Network Installation &amp; Support
                     </option>
+
                     <option value="other">
                         Other Technology Service
                     </option>
                 </select>
 
-                <label for="contact-method">Preferred Contact Method</label>
+
+                <label for="contact-method">
+                    Preferred Contact Method
+                </label>
+
                 <select
                     id="contact-method"
                     name="contact-method"
                 >
-                    <option value="">Select an Option</option>
-                    <option value="phone">Phone</option>
-                    <option value="email">Email</option>
-                    <option value="either">Either Phone or Email</option>
+                    <option value="">
+                        Select an Option
+                    </option>
+
+                    <option value="phone">
+                        Phone
+                    </option>
+
+                    <option value="email">
+                        Email
+                    </option>
+
+                    <option value="either">
+                        Either Phone or Email
+                    </option>
                 </select>
 
-                <label for="message">Tell Us About Your Project *</label>
+
+                <label for="message">
+                    Tell Us About Your Project *
+                </label>
+
                 <textarea
                     id="message"
                     name="message"
@@ -523,16 +596,22 @@
                     required
                 ></textarea>
 
-                <button type="submit" class="button">
+
+                <button
+                    type="submit"
+                    class="button"
+                >
                     Submit Request
                 </button>
+
 
                 <p class="privacy-note">
                     Please do not submit passwords, account credentials,
                     Social Security numbers, financial account information,
                     or other highly sensitive information through this form.
                     Information submitted through this website will be handled
-                    according to our Privacy Policy.
+                    according to our
+                    <a href="privacy.html">Privacy Policy</a>.
                 </p>
 
             </form>
