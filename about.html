@@ -1,17 +1,19 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>About Us | UK AND ASSOCIATES LLC</title>
 
-    <meta name="description" content="Learn about UK AND ASSOCIATES LLC, a Philadelphia-based technology services company providing GPS tracking, security camera installation, computer services, and network support.">
+    <meta name="description"
+        content="Learn about UK AND ASSOCIATES LLC, a Philadelphia-based technology services company providing GPS tracking, security camera installation, computer services, and network support.">
 
     <link rel="stylesheet" href="styles.css">
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,24 +33,51 @@
             color: #0056b3;
         }
 
+
+        /* Interior Page Header */
         header {
             background-color: #0056b3;
             color: white;
-            padding: 3rem 1rem;
-            text-align: center;
+            padding: 1.5rem 5%;
         }
 
-        header h1 {
-            font-size: 2.7rem;
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-size: 2.2rem;
             margin: 0;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            margin: 0.75rem 0 0;
             color: white;
         }
 
+        .header-text p {
+            font-size: 1.15rem;
+            margin: 0.5rem 0 0;
+            color: white;
+        }
+
+        .header-logo {
+            display: block;
+            width: 200px;
+            max-width: 28%;
+            height: auto;
+            background-color: white;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+
+        /* Navigation */
         nav {
             text-align: center;
             background-color: white;
@@ -68,6 +97,8 @@
             color: white;
         }
 
+
+        /* Main Content */
         main {
             max-width: 1100px;
             margin: auto;
@@ -90,6 +121,8 @@
             color: #555;
         }
 
+
+        /* Intro */
         .intro {
             text-align: center;
             margin-bottom: 3rem;
@@ -101,6 +134,8 @@
             margin-right: auto;
         }
 
+
+        /* Cards */
         .info-card,
         .value-card {
             background-color: white;
@@ -110,6 +145,8 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
+
+        /* Two Column Layout */
         .two-column {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -133,6 +170,8 @@
             margin-bottom: 10px;
         }
 
+
+        /* Buttons */
         .button {
             display: inline-block;
             background-color: #0056b3;
@@ -148,6 +187,8 @@
             color: white;
         }
 
+
+        /* Call To Action */
         .cta {
             text-align: center;
             margin-top: 4rem;
@@ -160,6 +201,8 @@
             margin-top: 0;
         }
 
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -176,20 +219,37 @@
             color: #7db7ff;
         }
 
+
+        /* Tablet */
         @media (max-width: 900px) {
+
             .two-column,
             .values-grid {
                 grid-template-columns: 1fr;
             }
         }
 
+
+        /* Mobile */
         @media (max-width: 768px) {
-            header h1 {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .header-text h1 {
                 font-size: 2rem;
             }
 
-            header p {
+            .header-text p {
                 font-size: 1.05rem;
+            }
+
+            .header-logo {
+                width: 200px;
+                max-width: 80%;
             }
 
             nav a {
@@ -203,24 +263,60 @@
             }
         }
 
+
+        /* Small Phones */
         @media (max-width: 600px) {
+
             nav a {
                 display: block;
                 margin: 0;
                 border-bottom: 1px solid #eee;
             }
+
+            .header-logo {
+                width: 190px;
+                max-width: 85%;
+            }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
 <header>
-    <h1>UK AND ASSOCIATES LLC</h1>
-    <p>Practical Technology Solutions. Professional Service.</p>
+
+    <div class="header-content">
+
+        <div class="header-text">
+
+            <h1>UK AND ASSOCIATES LLC</h1>
+
+            <p>
+                Practical Technology Solutions. Professional Service.
+            </p>
+
+        </div>
+
+
+        <img
+            src="images/uk-associates-logo.jpg"
+            alt="UK AND ASSOCIATES LLC Technology Solutions"
+            class="header-logo"
+        >
+
+    </div>
+
 </header>
 
+
+<!-- NAVIGATION -->
 <nav>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="gps-tracking.html">GPS Tracking</a>
@@ -229,11 +325,16 @@
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
+
 </nav>
+
 
 <main>
 
+
+    <!-- INTRO -->
     <section class="intro">
+
         <h2>About UK AND ASSOCIATES LLC</h2>
 
         <p>
@@ -253,16 +354,23 @@
             an appropriate solution, install and configure the technology
             properly, and provide dependable support.
         </p>
+
     </section>
 
 
+
+    <!-- WHAT WE DO -->
     <section class="info-card">
+
         <h2>What We Do</h2>
 
         <div class="two-column">
 
+
             <div>
+
                 <h3>Vehicle Technology</h3>
+
                 <p>
                     We provide GPS vehicle tracking and monitoring solutions
                     designed to improve vehicle visibility, security awareness,
@@ -276,10 +384,15 @@
                     <li>Professional hardwired installations</li>
                     <li>Simple installation options</li>
                 </ul>
+
             </div>
 
+
+
             <div>
-                <h3>Security & Surveillance</h3>
+
+                <h3>Security &amp; Surveillance</h3>
+
                 <p>
                     We install and configure residential and commercial
                     surveillance systems based on the customer's property,
@@ -293,10 +406,15 @@
                     <li>Camera placement planning</li>
                     <li>Existing-system upgrades</li>
                 </ul>
+
             </div>
 
+
+
             <div>
+
                 <h3>Computer Services</h3>
+
                 <p>
                     We help customers improve, troubleshoot, and maintain
                     desktop computers and business workstations.
@@ -309,10 +427,15 @@
                     <li>Workstation setup</li>
                     <li>General technical support</li>
                 </ul>
+
             </div>
 
+
+
             <div>
+
                 <h3>Networking</h3>
+
                 <p>
                     We provide network installation and support for homes and
                     small businesses that need reliable connectivity between
@@ -326,57 +449,87 @@
                     <li>Wi-Fi setup</li>
                     <li>Server and workstation connectivity</li>
                 </ul>
+
             </div>
 
+
         </div>
+
     </section>
 
 
+
+    <!-- OUR APPROACH -->
     <section>
+
         <h2>Our Approach</h2>
 
         <div class="values-grid">
 
+
             <div class="value-card">
+
                 <h3>Understand the Need</h3>
+
                 <p>
                     We begin by listening to the customer and understanding
                     what problem needs to be solved or what result they are
                     trying to achieve.
                 </p>
+
             </div>
 
+
+
             <div class="value-card">
+
                 <h3>Recommend Practical Solutions</h3>
+
                 <p>
                     We focus on technology that fits the application instead of
                     recommending unnecessary equipment or complexity.
                 </p>
+
             </div>
 
+
+
             <div class="value-card">
-                <h3>Install & Configure Properly</h3>
+
+                <h3>Install &amp; Configure Properly</h3>
+
                 <p>
                     Equipment should not only be installed—it should be
                     configured, tested, organized, and prepared for reliable
                     everyday use.
                 </p>
+
             </div>
 
+
+
             <div class="value-card">
+
                 <h3>Support the Customer</h3>
+
                 <p>
                     Technology needs change over time. We aim to remain
                     available for troubleshooting, upgrades, maintenance, and
                     future expansion.
                 </p>
+
             </div>
 
+
         </div>
+
     </section>
 
 
+
+    <!-- PROFESSIONAL SERVICE -->
     <section class="info-card">
+
         <h2>Professional Service With Flexibility</h2>
 
         <p>
@@ -405,11 +558,15 @@
             customer's actual needs rather than taking a one-size-fits-all
             approach.
         </p>
+
     </section>
 
 
+
+    <!-- PRIVACY -->
     <section class="info-card">
-        <h2>Privacy & Responsible Technology</h2>
+
+        <h2>Privacy &amp; Responsible Technology</h2>
 
         <p>
             Some of the technologies we work with, particularly GPS tracking
@@ -435,12 +592,18 @@
         </p>
 
         <p>
-            <a href="privacy.html">Read our Privacy Policy →</a>
+            <a href="privacy.html">
+                Read our Privacy Policy →
+            </a>
         </p>
+
     </section>
 
 
+
+    <!-- SERVICE AREA -->
     <section class="info-card">
+
         <h2>Serving the Philadelphia Area</h2>
 
         <p>
@@ -458,10 +621,14 @@
             Project availability and service area may vary based on the type,
             size, and location of the work requested.
         </p>
+
     </section>
 
 
+
+    <!-- CALL TO ACTION -->
     <section class="cta">
+
         <h2>Let's Talk About Your Technology Needs</h2>
 
         <p>
@@ -474,12 +641,18 @@
             We will help you determine the practical next step.
         </p>
 
-        <a href="contact.html" class="button">Contact UK AND ASSOCIATES LLC</a>
+        <a href="contact.html" class="button">
+            Contact UK AND ASSOCIATES LLC
+        </a>
+
     </section>
+
 
 </main>
 
 
+
+<!-- FOOTER -->
 <footer>
 
     <p>
@@ -506,6 +679,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
-```
