@@ -1,17 +1,19 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Terms of Service | UK AND ASSOCIATES LLC</title>
 
-    <meta name="description" content="Read the Terms of Service for UK AND ASSOCIATES LLC, including terms governing GPS tracking, security camera installation, computer services, networking services, billing, lawful use, and service limitations.">
+    <meta name="description"
+        content="Read the Terms of Service for UK AND ASSOCIATES LLC, including terms governing GPS tracking, security camera installation, computer services, networking services, billing, lawful use, and service limitations.">
 
     <link rel="stylesheet" href="styles.css">
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,24 +33,51 @@
             color: #0056b3;
         }
 
+
+        /* Interior Page Header */
         header {
             background-color: #0056b3;
             color: white;
-            padding: 3rem 1rem;
-            text-align: center;
+            padding: 1.5rem 5%;
         }
 
-        header h1 {
-            font-size: 2.7rem;
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-size: 2.2rem;
             margin: 0;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            margin: 0.75rem 0 0;
             color: white;
         }
 
+        .header-text p {
+            font-size: 1.15rem;
+            margin: 0.5rem 0 0;
+            color: white;
+        }
+
+        .header-logo {
+            display: block;
+            width: 200px;
+            max-width: 28%;
+            height: auto;
+            background-color: white;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+
+        /* Navigation */
         nav {
             text-align: center;
             background-color: white;
@@ -68,6 +97,8 @@
             color: white;
         }
 
+
+        /* Main */
         main {
             max-width: 1000px;
             margin: auto;
@@ -94,6 +125,8 @@
             margin-bottom: 8px;
         }
 
+
+        /* Intro */
         .intro {
             text-align: center;
             margin-bottom: 3rem;
@@ -105,6 +138,8 @@
             margin-right: auto;
         }
 
+
+        /* Terms Sections */
         .terms-section {
             background-color: white;
             padding: 28px;
@@ -136,6 +171,8 @@
             margin-bottom: 2rem;
         }
 
+
+        /* Button */
         .button {
             display: inline-block;
             background-color: #0056b3;
@@ -151,6 +188,8 @@
             color: white;
         }
 
+
+        /* CTA */
         .cta {
             text-align: center;
             margin-top: 3rem;
@@ -159,6 +198,8 @@
             border-radius: 8px;
         }
 
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -175,13 +216,27 @@
             color: #7db7ff;
         }
 
+
+        /* Mobile */
         @media (max-width: 768px) {
-            header h1 {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .header-text h1 {
                 font-size: 2rem;
             }
 
-            header p {
+            .header-text p {
                 font-size: 1.05rem;
+            }
+
+            .header-logo {
+                width: 200px;
+                max-width: 80%;
             }
 
             nav a {
@@ -195,24 +250,59 @@
             }
         }
 
+
+        /* Small Phones */
         @media (max-width: 600px) {
+
             nav a {
                 display: block;
                 margin: 0;
                 border-bottom: 1px solid #eee;
             }
+
+            .header-logo {
+                width: 190px;
+                max-width: 85%;
+            }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
 <header>
-    <h1>UK AND ASSOCIATES LLC</h1>
-    <p>Terms of Service</p>
+
+    <div class="header-content">
+
+        <div class="header-text">
+
+            <h1>UK AND ASSOCIATES LLC</h1>
+
+            <p>
+                Terms of Service
+            </p>
+
+        </div>
+
+        <img
+            src="images/uk-associates-logo.jpg"
+            alt="UK AND ASSOCIATES LLC Technology Solutions"
+            class="header-logo"
+        >
+
+    </div>
+
 </header>
 
+
+<!-- NAVIGATION -->
 <nav>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="gps-tracking.html">GPS Tracking</a>
@@ -221,10 +311,14 @@
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
+
 </nav>
+
 
 <main>
 
+
+    <!-- INTRO -->
     <section class="intro">
 
         <h2>Terms of Service</h2>
@@ -244,8 +338,9 @@
 
     </section>
 
+
     <p class="effective-date">
-        Effective Date: August 25,2026.
+        Effective Date: August 25, 2026
     </p>
 
 
@@ -330,7 +425,7 @@
 
     <section class="gps-section">
 
-        <h2>4. GPS Monitoring & Service Availability</h2>
+        <h2>4. GPS Monitoring &amp; Service Availability</h2>
 
         <p>
             GPS monitoring services may depend on GPS satellites, cellular
@@ -417,7 +512,7 @@
 
     <section class="terms-section">
 
-        <h2>7. Computer Services & Data</h2>
+        <h2>7. Computer Services &amp; Data</h2>
 
         <p>
             Customers should maintain current backups of important files before
@@ -461,7 +556,7 @@
 
     <section class="terms-section">
 
-        <h2>9. Equipment Ownership & Rental</h2>
+        <h2>9. Equipment Ownership &amp; Rental</h2>
 
         <p>
             Equipment purchased from UK AND ASSOCIATES LLC becomes the customer's
@@ -480,7 +575,7 @@
 
     <section class="terms-section">
 
-        <h2>10. Billing & Payment</h2>
+        <h2>10. Billing &amp; Payment</h2>
 
         <p>
             Charges for installation, equipment, monitoring, support, or other
@@ -503,7 +598,7 @@
 
     <section class="terms-section">
 
-        <h2>11. Cancellation & Termination</h2>
+        <h2>11. Cancellation &amp; Termination</h2>
 
         <p>
             Cancellation terms for recurring GPS monitoring or other subscription
@@ -555,7 +650,7 @@
         </p>
 
         <p>
-            Please review our:
+            Please review our
             <a href="privacy.html">Privacy Policy</a>.
         </p>
 
@@ -564,7 +659,7 @@
 
     <section class="terms-section">
 
-        <h2>14. Third-Party Products & Services</h2>
+        <h2>14. Third-Party Products &amp; Services</h2>
 
         <p>
             Services provided by UK AND ASSOCIATES LLC may depend on third-party
@@ -621,7 +716,7 @@
 
     <section class="terms-section">
 
-        <h2>17. Customer Misuse & Indemnification</h2>
+        <h2>17. Customer Misuse &amp; Indemnification</h2>
 
         <p>
             Customers are responsible for lawful use of services and equipment.
@@ -639,7 +734,7 @@
 
     <section class="terms-section">
 
-        <h2>18. Service Estimates & Changes in Scope</h2>
+        <h2>18. Service Estimates &amp; Changes in Scope</h2>
 
         <p>
             Estimates are based on information reasonably available before work
@@ -705,12 +800,16 @@
 
         <p>
             <strong>Email:</strong><br>
-            <a href="mailto:taniukere@ukandassociates.com">taniukere@ukandassociates.com</a>
+            <a href="mailto:taniukere@ukandassociates.com">
+                taniukere@ukandassociates.com
+            </a>
         </p>
 
         <p>
             <strong>Phone:</strong><br>
-            2676156700
+            <a href="tel:2676156700">
+                267-615-6700
+            </a>
         </p>
 
     </section>
@@ -725,13 +824,18 @@
             installation, equipment question, or customer account.
         </p>
 
-        <a href="contact.html" class="button">Contact Us</a>
+        <a href="contact.html" class="button">
+            Contact Us
+        </a>
 
     </section>
+
 
 </main>
 
 
+
+<!-- FOOTER -->
 <footer>
 
     <p>
@@ -758,6 +862,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
-```
