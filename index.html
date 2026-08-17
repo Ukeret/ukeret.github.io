@@ -3,14 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>UK AND ASSOCIATES LLC | Technology Services - Philadelphia, PA</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Technology Services in Philadelphia, PA | UK AND ASSOCIATES LLC</title>
 
     <meta name="description"
-        content="UK AND ASSOCIATES LLC provides GPS vehicle tracking, security camera installation, computer services, and network installation for homes and businesses in Philadelphia, PA.">
+          content="UK AND ASSOCIATES LLC provides GPS vehicle tracking, security camera installation, computer upgrades and repair, and network installation for homes and businesses in Philadelphia, PA.">
 
-    <link rel="stylesheet" href="styles.css">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://ukandassociates.com/">
+
+    <link rel="stylesheet"
+          href="styles.css">
 
     <style>
 
@@ -32,6 +40,20 @@
 
         a:hover {
             color: #0056b3;
+        }
+
+
+        /* Visually Hidden Accessibility Text */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
         }
 
 
@@ -68,6 +90,15 @@
 
         nav a:hover {
             background-color: #007BFF;
+            color: white;
+        }
+
+        nav a[aria-current="page"] {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        nav a[aria-current="page"]:hover {
             color: white;
         }
 
@@ -144,7 +175,7 @@
             font-size: 1.4rem;
         }
 
-        .service-card p {
+        .service-card p:last-child {
             margin-bottom: 0;
         }
 
@@ -232,6 +263,7 @@
             }
         }
 
+
         @media (max-width: 600px) {
 
             nav a {
@@ -260,16 +292,38 @@
 
 
 <!-- NAVIGATION -->
-<nav>
+<nav aria-label="Primary navigation">
 
-    <a href="index.html">Home</a>
+    <a href="index.html"
+       aria-current="page">
+        Home
+    </a>
+
     <a href="services.html">Services</a>
-    <a href="gps-tracking.html">GPS Tracking</a>
-    <a href="security-cameras.html">Security Cameras</a>
-    <a href="computer-services.html">Computer Services</a>
-    <a href="networking.html">Networking</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
+
+    <a href="gps-tracking.html">
+        GPS Tracking
+    </a>
+
+    <a href="security-cameras.html">
+        Security Cameras
+    </a>
+
+    <a href="computer-services.html">
+        Computer Services
+    </a>
+
+    <a href="networking.html">
+        Networking
+    </a>
+
+    <a href="about.html">
+        About Us
+    </a>
+
+    <a href="contact.html">
+        Contact
+    </a>
 
 </nav>
 
@@ -277,15 +331,20 @@
 <!-- COMPANY LOGO -->
 <section class="logo-section">
 
+    <h1 class="visually-hidden">
+        UK AND ASSOCIATES LLC Technology Services in Philadelphia, Pennsylvania
+    </h1>
+
     <img
         src="images/uk-associates-logo.jpg"
-        alt="UK AND ASSOCIATES LLC Technology Solutions - Security Cameras, Computer Services, Networking and GPS Tracking"
+        alt="UK AND ASSOCIATES LLC logo"
         class="company-logo"
     >
 
 </section>
 
 
+<!-- MAIN CONTENT -->
 <main>
 
 
@@ -309,7 +368,8 @@
             and support the right technology for your needs.
         </p>
 
-        <a href="contact.html" class="button">
+        <a href="contact.html"
+           class="button">
             Request a Consultation
         </a>
 
@@ -326,7 +386,7 @@
 
 
             <!-- GPS TRACKING -->
-            <div class="service-card">
+            <article class="service-card">
 
                 <h3>GPS Vehicle Tracking &amp; Monitoring</h3>
 
@@ -344,12 +404,12 @@
                     </a>
                 </p>
 
-            </div>
+            </article>
 
 
 
             <!-- SECURITY CAMERAS -->
-            <div class="service-card">
+            <article class="service-card">
 
                 <h3>Security Camera Installation</h3>
 
@@ -366,12 +426,12 @@
                     </a>
                 </p>
 
-            </div>
+            </article>
 
 
 
             <!-- COMPUTER SERVICES -->
-            <div class="service-card">
+            <article class="service-card">
 
                 <h3>Computer Upgrades &amp; Repair</h3>
 
@@ -387,12 +447,12 @@
                     </a>
                 </p>
 
-            </div>
+            </article>
 
 
 
             <!-- NETWORKING -->
-            <div class="service-card">
+            <article class="service-card">
 
                 <h3>Network Installation &amp; Support</h3>
 
@@ -408,7 +468,7 @@
                     </a>
                 </p>
 
-            </div>
+            </article>
 
 
         </div>
@@ -421,7 +481,6 @@
     <section class="why-us">
 
         <h2>Why Choose UK AND ASSOCIATES LLC?</h2>
-
 
         <h3>Professional Installation</h3>
 
@@ -471,7 +530,8 @@
             determine the right solution.
         </p>
 
-        <a href="contact.html" class="button">
+        <a href="contact.html"
+           class="button">
             Contact Us
         </a>
 
