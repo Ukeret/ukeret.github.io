@@ -344,6 +344,297 @@
             }
         }
 
+
+        /* Production GPS landing page */
+        .gps-hero {
+            position: relative;
+            overflow: hidden;
+            margin: -3rem calc(-1 * 5vw) 2.5rem;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            padding: 58px 5%;
+            background:
+                linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.93) 43%, rgba(255,255,255,.38) 70%, rgba(255,255,255,.12) 100%),
+                url("images/gps-tracking-map.png") center 13% / cover no-repeat;
+            border-bottom: 1px solid #dbe8f7;
+        }
+        .gps-hero-inner { width:100%; max-width:1100px; margin:auto; }
+        .gps-hero-copy { max-width:650px; }
+        .gps-kicker {
+            display:inline-block; padding:7px 12px; margin-bottom:12px;
+            border-radius:999px; background:#e9f3ff; color:#0756ad;
+            font-weight:700; font-size:.9rem;
+        }
+        .gps-hero h2 {
+            margin:0 0 8px; color:#073575;
+            font-size:clamp(2.6rem,5vw,4.4rem); line-height:1.02;
+        }
+        .gps-tagline {
+            margin:0 0 16px; color:#123d77;
+            font-size:clamp(1.35rem,2.5vw,2rem); font-weight:700;
+        }
+        .gps-hero-copy > p:not(.gps-tagline) { color:#29425f; max-width:620px; }
+        .hero-actions { display:flex; flex-wrap:wrap; gap:14px; margin:24px 0 28px; }
+        .hero-btn {
+            display:inline-flex; align-items:center; justify-content:center;
+            min-height:54px; padding:0 24px; border-radius:8px;
+            color:#fff; font-weight:700; box-shadow:0 6px 18px rgba(0,45,105,.14);
+        }
+        .hero-btn.service { background:#075fc9; }
+        .hero-btn.service:hover { background:#034b9f; color:#fff; }
+        .hero-btn.login { background:#11843b; }
+        .hero-btn.login:hover { background:#0c6b31; color:#fff; }
+        .hero-features {
+            display:grid; grid-template-columns:repeat(5,1fr); gap:10px;
+            max-width:760px;
+        }
+        .hero-feature {
+            padding:11px 8px; text-align:center; border-radius:9px;
+            background:rgba(255,255,255,.91); border:1px solid #dbe9f9;
+            color:#113d77; font-size:.84rem; font-weight:700;
+            box-shadow:0 3px 12px rgba(0,0,0,.05);
+        }
+        .portal-banner {
+            display:grid; grid-template-columns:1fr auto; gap:25px; align-items:center;
+            margin:0 0 2.7rem; padding:27px 30px; border-radius:12px;
+            background:linear-gradient(135deg,#edf6ff,#f8fbff);
+            border:1px solid #d7e9ff; box-shadow:0 4px 16px rgba(0,64,140,.07);
+        }
+        .portal-banner h2 { margin:0 0 5px; color:#0756ad; font-size:1.55rem; }
+        .portal-banner p { margin:0; }
+        .portal-login {
+            display:inline-block; padding:14px 22px; border-radius:7px;
+            background:#063b85; color:#fff; font-weight:700; white-space:nowrap;
+        }
+        .portal-login:hover { background:#032f6d; color:#fff; }
+        .audience-grid {
+            display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin:0 0 3rem;
+        }
+        .audience-card {
+            background:#fff; border-radius:10px; padding:25px;
+            border:1px solid #e4ebf3; box-shadow:0 3px 14px rgba(0,0,0,.06);
+        }
+        .audience-card h3 { margin-bottom:8px; }
+        .audience-card p { margin-bottom:0; }
+        .section-heading { text-align:center; margin:3.2rem 0 1.8rem; }
+        .section-heading h2 { margin-bottom:.25rem; }
+        .protect-banner {
+            display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center;
+            margin:3rem 0; padding:30px; border-radius:12px;
+            background:linear-gradient(120deg,#0873cf,#063b85); color:#fff;
+        }
+        .protect-banner h2, .protect-banner p { color:#fff; margin-top:0; }
+        .protect-banner .button { background:#fff; color:#0756ad; margin:0; }
+        .protect-banner .button:hover { background:#eef6ff; color:#034b9f; }
+
+        @media (max-width:900px) {
+            .gps-hero {
+                background:
+                    linear-gradient(rgba(255,255,255,.90),rgba(255,255,255,.90)),
+                    url("images/gps-tracking-map.png") center top / cover no-repeat;
+            }
+            .hero-features { grid-template-columns:repeat(3,1fr); }
+            .audience-grid { grid-template-columns:1fr; }
+        }
+        @media (max-width:768px) {
+            .gps-hero { margin:-2rem -1rem 2rem; min-height:auto; padding:44px 20px; }
+            .hero-actions { flex-direction:column; }
+            .hero-btn { width:100%; box-sizing:border-box; }
+            .hero-features { grid-template-columns:repeat(2,1fr); }
+            .portal-banner, .protect-banner { grid-template-columns:1fr; }
+            .portal-login { text-align:center; white-space:normal; }
+        }
+
+
+        /* =========================================================
+           FINAL LOWER-PAGE POLISH
+           ========================================================= */
+
+        main > section:not(.gps-hero):not(.portal-banner):not(.audience-grid) {
+            scroll-margin-top: 90px;
+        }
+
+        .info-card,
+        .service-card,
+        .step,
+        .privacy-box,
+        .notice,
+        .cta {
+            border: 1px solid #e2eaf3;
+            box-shadow: 0 6px 22px rgba(9, 54, 105, .07);
+        }
+
+        .info-card {
+            padding: 34px;
+            border-radius: 12px;
+            margin: 0 0 2rem;
+        }
+
+        .info-card h2,
+        main > section > h2 {
+            color: #073575;
+            letter-spacing: -.02em;
+        }
+
+        .info-card h3,
+        .service-card h3,
+        .step h3 {
+            color: #0756ad;
+        }
+
+        .info-card ul,
+        .service-card ul {
+            margin-bottom: 0;
+        }
+
+        .info-card li,
+        .service-card li {
+            padding-left: 3px;
+            margin-bottom: 11px;
+        }
+
+        /* Installation cards */
+        main > section:has(.service-card) {
+            margin: 3rem 0;
+        }
+
+        main > section:has(.service-card) > h2 {
+            text-align: center;
+            margin-bottom: .5rem;
+        }
+
+        .service-card {
+            padding: 28px;
+            border-radius: 12px;
+            margin-bottom: 0;
+            border-top: 4px solid #075fc9;
+        }
+
+        /* Four-step customer journey */
+        main > section:has(.steps) {
+            margin: 3.4rem 0;
+        }
+
+        main > section:has(.steps) > h2 {
+            text-align: center;
+            margin-bottom: 1.6rem;
+        }
+
+        .steps {
+            gap: 16px;
+        }
+
+        .step {
+            position: relative;
+            padding: 28px 20px;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        .step-number {
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
+            background: linear-gradient(135deg, #0873cf, #063b85);
+            box-shadow: 0 5px 14px rgba(0, 86, 179, .18);
+        }
+
+        .step p {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        /* Privacy / lawful-use section */
+        .privacy-box {
+            margin: 3rem 0 2rem;
+            padding: 32px 34px;
+            border-radius: 12px;
+            border-left: 6px solid #075fc9;
+            background: linear-gradient(135deg, #eef6ff, #f9fcff);
+        }
+
+        .privacy-box h2 {
+            margin-top: 0;
+            color: #073575;
+        }
+
+        /* Important service information */
+        .notice {
+            margin: 2rem 0 3rem;
+            padding: 30px 34px;
+            border-radius: 12px;
+            border-left: 6px solid #d9a300;
+            background: #fffaf0;
+        }
+
+        .notice h2 {
+            margin-top: 0;
+            color: #5f4700;
+        }
+
+        /* Final conversion area */
+        .cta {
+            margin: 3.5rem 0 1rem;
+            padding: 42px 32px;
+            border-radius: 14px;
+            background:
+                linear-gradient(135deg, rgba(7,95,201,.97), rgba(6,59,133,.98));
+            text-align: center;
+        }
+
+        .cta h2,
+        .cta p {
+            color: #fff;
+        }
+
+        .cta p {
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta .button {
+            background: #fff;
+            color: #0756ad;
+            padding: 14px 25px;
+            border-radius: 7px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.12);
+        }
+
+        .cta .button:hover {
+            background: #eef6ff;
+            color: #034b9f;
+        }
+
+        /* Keep section rhythm consistent */
+        .audience-grid {
+            margin-bottom: 3.2rem;
+        }
+
+        .audience-card {
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+
+        .audience-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(0, 61, 130, .10);
+        }
+
+        @media (max-width: 768px) {
+            .info-card,
+            .privacy-box,
+            .notice,
+            .cta {
+                padding: 24px 20px;
+            }
+
+            main > section:has(.service-card) > h2,
+            main > section:has(.steps) > h2 {
+                text-align: left;
+            }
+        }
+
     </style>
 </head>
 
@@ -393,35 +684,65 @@
     <a href="computer-services.html">Computer Services</a>
     <a href="networking.html">Networking</a>
     <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Contact</a> |
+        <a href="https://gps-tracking.ukandassociates.com">GPS Customer Login</a>
 
 </nav>
 
 
 <main>
 
+    <!-- GPS HERO -->
+    <section class="gps-hero" aria-labelledby="gps-title">
+        <div class="gps-hero-inner">
+            <div class="gps-hero-copy">
+                <span class="gps-kicker">Vehicle Tracking &amp; Monitoring</span>
+                <h2 id="gps-title">GPS Vehicle Tracking</h2>
+                <p class="gps-tagline">Know More. Stay Connected. Stay in Control.</p>
+                <p>
+                    Professional GPS tracking installation and monitoring for personal
+                    vehicles, business vehicles, and light commercial fleets. View
+                    available location, trip history, vehicle status, and supported
+                    monitoring information through your secure customer portal.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="hero-btn service">Request GPS Service</a>
+                    <a href="https://gps-tracking.ukandassociates.com" class="hero-btn login">Customer GPS Login</a>
+                </div>
+                <div class="hero-features">
+                    <div class="hero-feature">Real-Time Location</div>
+                    <div class="hero-feature">Trip History &amp; Reports</div>
+                    <div class="hero-feature">Geofencing</div>
+                    <div class="hero-feature">Supported Alerts</div>
+                    <div class="hero-feature">Professional Installation</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- INTRO -->
-    <section class="intro">
+    <!-- CUSTOMER PORTAL -->
+    <section class="portal-banner">
+        <div>
+            <h2>Already a GPS Tracking Customer?</h2>
+            <p>Access your secure vehicle tracking dashboard to view available location, trip history, status information, and more.</p>
+        </div>
+        <a href="https://gps-tracking.ukandassociates.com" class="portal-login">Login to GPS Tracking Portal &rarr;</a>
+    </section>
 
-        <h2>GPS Vehicle Tracking Installation in Philadelphia</h2>
-
-        <p>
-            UK AND ASSOCIATES LLC provides GPS vehicle tracking and monitoring
-            solutions for personal vehicles, business vehicles, and light
-            commercial fleets throughout the Philadelphia area.
-        </p>
-
-        <p>
-            Our service combines GPS tracking hardware, cellular connectivity,
-            professional configuration, and secure access to vehicle location
-            information through an approved monitoring platform.
-        </p>
-
-        <a href="contact.html" class="button">
-            Request GPS Tracking Service
-        </a>
-
+    <!-- CUSTOMER TYPES AT A GLANCE -->
+    <section class="audience-grid" aria-label="GPS tracking services">
+        <div class="audience-card">
+            <h3>Personal Vehicles</h3>
+            <p>Improve visibility of your personal vehicle with supported location, movement, trip, and alert features.</p>
+        </div>
+        <div class="audience-card">
+            <h3>Business Fleets</h3>
+            <p>Monitor company-owned vehicles, review trip activity, and improve visibility of transportation assets.</p>
+        </div>
+        <div class="audience-card">
+            <h3>Professional Installation</h3>
+            <p>Choose an easy-install option or a professionally installed hardwired tracker based on your vehicle and requirements.</p>
+        </div>
     </section>
 
 
@@ -723,59 +1044,6 @@
 
 
 
-    <!-- CUSTOMER TYPES -->
-    <section class="info-card">
-
-        <h2>Who Can Benefit From GPS Tracking?</h2>
-
-        <div class="two-column">
-
-
-            <div>
-
-                <h3>Personal Vehicle Owners</h3>
-
-                <p>
-                    Improve visibility of a personal vehicle and receive useful
-                    information about vehicle location and movement.
-                </p>
-
-
-                <h3>Small Businesses</h3>
-
-                <p>
-                    Track company-owned vehicles and improve visibility of
-                    business transportation assets.
-                </p>
-
-            </div>
-
-
-
-            <div>
-
-                <h3>Light Commercial Fleets</h3>
-
-                <p>
-                    Monitor multiple vehicles, review trip activity, and use
-                    supported alerts to improve fleet awareness.
-                </p>
-
-
-                <h3>Specialty Applications</h3>
-
-                <p>
-                    Additional GPS tracking applications may be available based
-                    on equipment capabilities and lawful customer requirements.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
 
 
     <!-- CALL TO ACTION -->
@@ -795,6 +1063,15 @@
 
     </section>
 
+
+
+    <section class="protect-banner">
+        <div>
+            <h2>Protect What Moves You</h2>
+            <p>Reliable GPS tracking solutions for personal vehicles, business vehicles, and light commercial fleets.</p>
+        </div>
+        <a href="contact.html" class="button">Get Started Today</a>
+    </section>
 
 </main>
 
@@ -818,7 +1095,8 @@
     <p>
         <a href="privacy.html">Privacy Policy</a> |
         <a href="terms.html">Terms of Service</a> |
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a> |
+        <a href="https://gps-tracking.ukandassociates.com">GPS Customer Login</a>
     </p>
 
     <p>
